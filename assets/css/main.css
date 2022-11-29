@@ -60,6 +60,14 @@ body {
     color: #B8405E;
 }
 
+.modeChange h3 {
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405EB2;
+    line-height: 30px;
+}
+
 .line2 {
     width: 45%;
     border-radius: 50px;
@@ -80,7 +88,47 @@ body {
     margin: 0 auto;
     width: 300px;
     height: 100px;
-    background: #000;
+}
+.FED {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.FED img {
+    width: 10%;
+}
+.WEBD img {
+    width: 10%;
+}
+.swipeFED {
+    width: 65px;
+    height: 27px;
+    background: #B8405E;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.btnBall{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #eee6ce;
+}
+.WEBD {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.swipeWEBD {
+    width: 65px;
+    height: 25px;
+    background: #B8405E;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
 }
 .leftDisplay__gallary {
     padding: 20px;
@@ -89,17 +137,18 @@ body {
     margin: 0px auto;
     display: flex;
     align-items: center;
-    width: 300px;
+    /* width: 300px; */
     height: 300px;
     background: #b8405e;
     border-radius: 20px;
 }
 .img {
     background: url(../img/mainPhoto.jpg);
-    width: 280px;
-    height: 280px;
+    width: 91%;
+    height: 91%;
     border-radius: 15px;
     margin: auto;
+    background-size: cover;
 }
 
 .leftDisplay__topBtn {
@@ -117,6 +166,7 @@ body {
     background: #b8405e;
     border-radius: 5px;
     color: #fff;
+    box-shadow: 0 0.3em 0 #591A2A
 }
 
 .slider__btn {
@@ -128,17 +178,97 @@ body {
 }
 .prev {
     width: 40px;
-    height: 40px;
+    height: 39px;
     border-radius: 50%;
     background: #ECB236;
+    box-shadow: 0 0.3em 0 #835614;
 }
 .next {
     width: 40px;
-    height: 40px;
+    height: 39px;
     border-radius: 50%;
     background: #ECB236;
+    box-shadow: 0 0.3em 0 #835614;
 }
 
+.myLike{
+    padding: 0 50px;
+}
+.likeBtn img {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+.myLike h2{
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405E;
+}
+.likeBtn {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btn1{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    /* background-image: url(../img/icons/bird.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto; */
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn2{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn3{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn4{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn5{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+
+.delete {
+    margin-left: 15px;
+    width: 100px;
+    height: 29px;
+    background: #b8405e;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0.3em 0 #591A2A
+}
 
 
 /* centerDisplay */
@@ -168,19 +298,32 @@ body {
     display: block;
     margin: auto;
     width: 110px;
-    height: 110px;
+    height: 105px;
     background: #DF9E3C;
     border-radius: 50%;
+    box-shadow: 0 0.5em 0 #835614;
 }
+
+.phpBtn img {
+    width: 80%;
+    height: 80%;
+}
+
 
 .reactBtn {
     display: block;
     margin: auto;
     align-items: center;
     width: 110px;
-    height: 110px;
+    height: 105px;
     background: #915293;
     border-radius: 50%;
+    box-shadow: 0 0.5em 0 #2D1934;
+
+}
+.reactBtn img {
+    width: 70%;
+    height: 70%;
 }
 
 .vueBtn {
@@ -188,9 +331,15 @@ body {
     margin: auto;
 
     width: 110px;
-    height: 110px;
+    height: 105px;
     background: #73CDBD;
     border-radius: 50%;
+    box-shadow: 0 0.5em 0 #3B7A6F;
+
+}
+.vueBtn img {
+    width: 60%;
+    height: 60%;
 }
 
 .centerDisplay__middle {
@@ -200,7 +349,13 @@ body {
 
 }
 
+.centerDisplay__middle__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .centerDisplay__middle__title {
+    width: 70%;
     background: #eee6ce;
     border-radius: 5px;
     padding: 15px 10px;
@@ -210,6 +365,27 @@ body {
     font-size: 1.05rem;
     font-weight: 700;
     color: #B8405E;
+}
+.sumSlider__btn {
+    margin-right: 20px;
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sumPrev {
+    width: 50px;
+    height: 49px;
+    border-radius: 50%;
+    background: #25252F;
+    box-shadow: 0 0.3em 0 #101016
+}
+.sumNext{
+    width: 50px;
+    height: 49px;
+    border-radius: 50%;
+    background: #25252F;
+    box-shadow: 0 0.3em 0 #101016;
 }
 .centerDisplay__middle__monitor {
     width: 100%;
@@ -267,21 +443,46 @@ column-gap: 20px;
 }
 .twitter {
     width: 50px;
-    height: 50px;
+    height: 49px;
     background: #73CDBD;
     border-radius: 50%;
+    box-shadow: 0 0.3em 0 #3B7A6F;
+    display: flex;
+    align-items: center;
+}
+
+.twitter img {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
 }
 .github{
     width: 50px;
-    height: 50px;
+    height: 49px;
     background: #915293;
     border-radius: 50%;
+    box-shadow: 0 0.3em 0 #2D1934;
+    display: flex;
+    align-items: center;
+}
+.github img {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
 }
 .tistory{
     width: 50px;
-    height: 50px;
+    height: 49px;
     background: #ECB236;
     border-radius: 50%;
+    box-shadow: 0 0.3em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.tistory img {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
 }
 
 .centerDisplay__bottom__ContactMe{
@@ -316,6 +517,7 @@ column-gap: 20px;
     padding: 15px 40px;
     background: #ECB236;
     border-radius: 5px;
+    box-shadow: 0 0.4em 0 #835614;
 }
 
 /* rightDisplay */
@@ -356,5 +558,4 @@ column-gap: 20px;
     background: #eee6ce;
     height: 370px;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
