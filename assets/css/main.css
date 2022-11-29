@@ -24,6 +24,7 @@ body {
 
 
 
+/* leftDisplay */
 .leftDisplay {
     height: 790px;
     background: #EEE6CE;
@@ -31,31 +32,72 @@ body {
     box-sizing: border-box;
 }
 .leftDisplay__header {
-    padding: 20px 20px;
+    padding: 15px 20px;
     font-weight: 700;
     font-size: 18px;
     color: #B8405E;
 }
-.lind {
+.line {
     width: 100%;
     height: 4px;
     background: #b8405e;
     box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
     
 }
+
+.modeChange__title{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.modeChange__title h2 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405E;
+}
+
+.line2 {
+    width: 45%;
+    border-radius: 50px;
+    height: 4px;
+    background: #b8405e;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.line3 {
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 50px;
+    height: 4px;
+    background: #b8405e;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.swipe__btn {
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    background: #000;
+}
+.leftDisplay__gallary {
+    padding: 20px;
+}
 .leftDisplay__monitor {
-    margin: 30px auto;
+    margin: 0px auto;
     display: flex;
     align-items: center;
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     background: #b8405e;
     border-radius: 20px;
 }
 .img {
     background: url(../img/mainPhoto.jpg);
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 15px;
     margin: auto;
 }
@@ -98,6 +140,8 @@ body {
 }
 
 
+
+/* centerDisplay */
 .centerDisplay {
     height: 790px;
     display: grid;
@@ -196,23 +240,84 @@ column-gap: 20px;
     height: 100%;
     background: #B8405E;
     border-radius: 10px;
+
 }
+.centerDisplay__bottom__SNS h2 {
+    font-weight: 600;
+    color: #eee6ce;
+    padding: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+
+.snss {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+.snsBtn {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    background: #EEE6CE;
+    padding: 10px;
+    
+}
+.twitter {
+    width: 50px;
+    height: 50px;
+    background: #73CDBD;
+    border-radius: 50%;
+}
+.github{
+    width: 50px;
+    height: 50px;
+    background: #915293;
+    border-radius: 50%;
+}
+.tistory{
+    width: 50px;
+    height: 50px;
+    background: #ECB236;
+    border-radius: 50%;
+}
+
 .centerDisplay__bottom__ContactMe{
     background: #B8405E;
     border-radius: 10px;
     height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+.centerDisplay__bottom__ContactMe h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #eee6ce;
+    margin-bottom: 10px;
 }
-.snss {
-    display: flex;
-    flex-wrap: wrap;
+
+.centerDisplay__bottom__ContactMe h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #eee6ce;
+    font-size: 16px;
 }
-.snsBtn {
-    width: 80px;
-    height: 80px;
-    background: #EEE6CE;
-    
+
+.contactMe__btn {
+    margin-top: 10px;
 }
+
+.contactMe__btn button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 40px;
+    background: #ECB236;
+    border-radius: 5px;
+}
+
 
 .rightDisplay {
     height: 790px;
