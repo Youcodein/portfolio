@@ -21,6 +21,94 @@ body {
     grid-template-columns: 1fr 1.5fr 0.8fr;
     column-gap: 20px;
 }
+.topBtn{
+    position: relative;
+}
+.snsBtn{
+    position: relative;
+}
+.dot1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot2{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot3{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot4{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot5{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot6{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot7{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot8{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
 
 
 
@@ -36,6 +124,15 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #B8405E;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo_icon{
+    background-image: url(../img/icons/kiwibird.svg);
+    width: 30px;
+    height: 22px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
 }
 .line {
     width: 100%;
@@ -124,7 +221,7 @@ body {
 }
 .swipeWEBD {
     width: 65px;
-    height: 25px;
+    height: 27px;
     background: #B8405E;
     border-radius: 70px;
     display: flex;
@@ -166,7 +263,9 @@ body {
     background: #b8405e;
     border-radius: 5px;
     color: #fff;
-    box-shadow: 0 0.3em 0 #591A2A
+    box-shadow: 0 0.3em 0 #591A2A;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .slider__btn {
@@ -182,6 +281,10 @@ body {
     border-radius: 50%;
     background: #ECB236;
     box-shadow: 0 0.3em 0 #835614;
+    background-image: url(../img/icons/left.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .next {
     width: 40px;
@@ -189,6 +292,10 @@ body {
     border-radius: 50%;
     background: #ECB236;
     box-shadow: 0 0.3em 0 #835614;
+    background-image: url(../img/icons/right.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .myLike{
@@ -360,6 +467,16 @@ body {
     border-radius: 5px;
     padding: 15px 10px;
     width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.centerDisplay__middle__title .mywork__Ico{
+    width: 29px;
+    height: 20px;
+    background: url(../img/icons/myWork.svg);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .centerDisplay__middle__title h2 {
     font-size: 1.05rem;
@@ -378,7 +495,11 @@ body {
     height: 49px;
     border-radius: 50%;
     background: #25252F;
-    box-shadow: 0 0.3em 0 #101016
+    box-shadow: 0 0.3em 0 #101016;
+    background-image: url(../img/icons/left.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .sumNext{
     width: 50px;
@@ -386,6 +507,10 @@ body {
     border-radius: 50%;
     background: #25252F;
     box-shadow: 0 0.3em 0 #101016;
+    background-image: url(../img/icons/right.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .centerDisplay__middle__monitor {
     width: 100%;
@@ -509,6 +634,7 @@ column-gap: 20px;
 
 .contactMe__btn {
     margin-top: 10px;
+    
 }
 
 .contactMe__btn button {
@@ -518,6 +644,9 @@ column-gap: 20px;
     background: #ECB236;
     border-radius: 5px;
     box-shadow: 0 0.4em 0 #835614;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
 }
 
 /* rightDisplay */
