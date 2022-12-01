@@ -109,6 +109,55 @@ body {
     z-index: 10000;
 }
 
+.rigthDisplay__decoration {
+    position: relative;
+}
+
+.dot9{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot10{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot11{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot12{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+
 
 
 
@@ -676,12 +725,69 @@ column-gap: 20px;
     border: 5px solid #73CDBD;
     margin-bottom: 20px;
 }
-
 .rigthDisplay__decoration{
     background: #eee6ce;
     height: 150px;
     border-radius: 5px;
     margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rigthDisplay__decoration__title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.rigthDisplay__decoration__title h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405E;
+}
+.mywork__Ico {
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/icons/decoration.svg);
+}
+
+
+.rigthDisplay__decoration .decoBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.deco1 {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F7EFDD;
+    border: 5px solid #B8405E;
+}
+.deco2 {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #262A53;
+    border: 5px solid #B8405E;
+}
+.deco3 {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ECB236;
+    border: 5px solid #B8405E;
+}
+.deco4 {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #B8405E;
+    border: 5px solid #B8405E;
 }
 .rigthDisplay__game{
     background: #eee6ce;
