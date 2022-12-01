@@ -53,14 +53,50 @@
     color: #B8405E;
 }
 .musicPlayer__btn{
+    position: relative;
     margin-right: 10px;
     width: 35px;
     height: 28px;
     background: #73CDBD;
     border-radius: 5px;
-    box-shadow: 0 0.3em 0 #3B7A6F;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    /* box-shadow: 0 0.3em 0 #3B7A6F; */
 
 }
+
+.musicPlayer__btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow:0 0.3em 0 0 #3B7A6F;
+    transform: translate3d(0, 0.0em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+
+.musicPlayer__btn:hover {
+    background: #73CDBD;
+    color: #3B7A6F;
+}
+.musicPlayer__btn:hover::before {
+    box-shadow:0 0.3em 0 0 #3B7A6F;
+    transform: translate3d(0, 0.0em, -1em);
+}
+.musicPlayer__btn:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.3em);
+  }
+  .musicPlayer__btn:active::before {
+    box-shadow: 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+  }
+
 .musicplayer__Ico {
     margin: 5px auto;
     width: 22px;
@@ -155,37 +191,180 @@
     justify-content: center;
 }
 .deco1 {
+    position: relative;
     margin: auto;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #F7EFDD;
     border: 5px solid #B8405E;
+    transform: rotate(0deg);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+
 }
+
+.deco1::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transform: translate3d(0, 0.0em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.deco1:hover {
+}
+.deco1:hover::before {
+    transform: translate3d(0, 0.0em, -1em);
+}
+.deco1:active {
+    background: #ffe9e9;
+    transform: rotate(90deg);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+
+    /* transform: translate(0em, 0.3em); */
+  }
+
+  .deco1:active::before {
+    box-shadow: inset 0.3em 0 0 0 #d1c7b1;
+    transform: translate3d(0, 0, -1em);
+  }
+
+
 .deco2 {
+    position: relative;
     margin: auto;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     background: #262A53;
     border: 5px solid #B8405E;
 }
+
+.deco2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transform: translate3d(0, 0.0em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.deco2:hover {
+}
+.deco2:hover::before {
+    transform: translate3d(0, 0.0em, -1em);
+}
+.deco2:active {
+    background: #262A53;
+    transform: rotate(90deg);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+
+    /* transform: translate(0em, 0.3em); */
+  }
+
+  .deco2:active::before {
+    box-shadow: inset 0.3em 0 0 0 #161830;
+    transform: translate3d(0, 0, -1em);
+  }
+
 .deco3 {
+    position: relative;
     margin: auto;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #ECB236;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     border: 5px solid #B8405E;
 }
+
+.deco3::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transform: translate3d(0, 0.0em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.deco3:hover {
+}
+.deco3:hover::before {
+    transform: translate3d(0, 0.0em, -1em);
+}
+.deco3:active {
+    background: #ECB236;
+    transform: rotate(90deg);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+
+    /* transform: translate(0em, 0.3em); */
+  }
+
+  .deco3:active::before {
+    box-shadow: inset 0.3em 0 0 0 #a57b20;
+    transform: translate3d(0, 0, -1em);
+  }
+
 .deco4 {
+    position: relative;
     margin: auto;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     background: #B8405E;
     border: 5px solid #B8405E;
 }
+
+.deco4::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transform: translate3d(0, 0.0em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.deco4:hover {
+}
+.deco4:hover::before {
+    transform: translate3d(0, 0.0em, -1em);
+}
+.deco4:active {
+    background: #B8405E;
+    transform: rotate(90deg);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+
+    /* transform: translate(0em, 0.3em); */
+  }
+
+  .deco4:active::before {
+    box-shadow: inset 0.3em 0 0 0 #7c243a;
+    transform: translate3d(0, 0, -1em);
+  }
+
 .btnDeco {
     margin: 9px auto;
     display: block;
@@ -230,20 +409,54 @@
 }
 
 .gameStartBtn{
+    display: block;
+    position: relative;
     margin: 20px auto;
     width: 143px;
     height: 40px;
     background: #b8405e;
     border-radius: 5px;
     color: #fff;
-    box-shadow: 0 0.3em 0 #591a2a;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    /* box-shadow: 0 0.3em 0 #591a2a; */
     font-weight: 600;
     font-size: 18px;
 }
 
+.gameStartBtn::before {
+    position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  box-shadow:0 0.5em 0 0 #591A2A;
+  transform: translate3d(0, 0.0em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.gameStartBtn:hover {
+    background: #ca9b9b;
+    color: #591A2A;
+}
+.gameStartBtn:hover::before {
+    box-shadow:0 0.5em 0 0 #591A2A;
+    transform: translate3d(0, 0.0em, -1em);
+}
+.gameStartBtn:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+  }
+  .gameStartBtn:active::before {
+    box-shadow: 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+  }
+
 .gameStartBtn h2 {
     padding: 8px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
