@@ -136,3 +136,10 @@ button {
 button{
     cursor: pointer;
 }
+
+/* input */
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
