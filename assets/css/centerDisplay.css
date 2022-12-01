@@ -323,13 +323,19 @@
     
 }
 
-.centerDisplay__middle__monitor img{
+
+.centerDisplay__middle__monitor .img{
     display: block;
     margin: 0 auto;
     width: 96%;
     height: 94%; 
     border-radius: 10px;
+    background-image: url(../img/myWork.jpg);
 }
+/* .centerDisplay__middle__monitor .img:hover{
+    background-color: rgba(0,0,0,0.5);
+} */
+
 
 .centerDisplay__bottom {
 display: grid;
