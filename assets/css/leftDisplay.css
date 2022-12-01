@@ -1,0 +1,264 @@
+/* leftDisplay */
+.leftDisplay {
+    /* height: 790px; */
+    background: #EEE6CE;
+    border-radius: 15px 15px 60px 60px;
+    box-sizing: border-box;
+}
+.leftDisplay__header {
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #B8405E;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo_icon{
+    background-image: url(../img/icons/kiwibird.svg);
+    width: 30px;
+    height: 22px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.line {
+    width: 100%;
+    height: 4px;
+    background: #b8405e;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    
+}
+
+.modeChange__title{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.modeChange__title h2 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405E;
+}
+
+.modeChange h3 {
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405EB2;
+    line-height: 30px;
+}
+
+.line2 {
+    width: 45%;
+    border-radius: 50px;
+    height: 4px;
+    background: #b8405e;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.line3 {
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 50px;
+    height: 4px;
+    background: #b8405e;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.swipe__btn {
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+}
+.FED {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.FED img {
+    width: 10%;
+}
+.WEBD img {
+    width: 10%;
+}
+.swipeFED {
+    width: 65px;
+    height: 27px;
+    background: #B8405E;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.btnBall{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #eee6ce;
+}
+.WEBD {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.swipeWEBD {
+    width: 65px;
+    height: 27px;
+    background: #B8405E;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+}
+.leftDisplay__gallary {
+    padding: 20px;
+}
+.leftDisplay__monitor {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    /* width: 300px; */
+    height: 300px;
+    background: #b8405e;
+    border-radius: 20px;
+}
+.img {
+    background: url(../img/mainPhoto.jpg);
+    width: 91%;
+    height: 91%;
+    border-radius: 15px;
+    margin: auto;
+    background-size: cover;
+}
+
+.leftDisplay__topBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.aboutMe{
+    width: 60%;
+}
+.aboutMeBtn {
+    margin-left: 15px;
+    width: 143px;
+    height: 40px;
+    background: #b8405e;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0.3em 0 #591A2A;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.slider__btn {
+    width: 30%;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prev {
+    width: 40px;
+    height: 39px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.3em 0 #835614;
+    background-image: url(../img/icons/left.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.next {
+    width: 40px;
+    height: 39px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.3em 0 #835614;
+    background-image: url(../img/icons/right.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.myLike{
+    padding: 0 50px;
+}
+.likeBtn img {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+.myLike h2{
+    font-weight: 600;
+    font-size: 18px;
+    color: #B8405E;
+}
+.likeBtn {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btn1{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    /* background-image: url(../img/icons/bird.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto; */
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn2{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn3{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn4{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+.btn5{
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    background: #ECB236;
+    box-shadow: 0 0.2em 0 #835614;
+    display: flex;
+    align-items: center;
+}
+
+.delete {
+    margin-left: 15px;
+    width: 100px;
+    height: 29px;
+    background: #b8405e;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0.3em 0 #591A2A
+}

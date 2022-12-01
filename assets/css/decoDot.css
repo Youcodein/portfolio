@@ -1,0 +1,135 @@
+.topBtn{
+    position: relative;
+}
+.snsBtn{
+    position: relative;
+}
+.dot1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot2{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot3{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot4{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot5{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot6{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot7{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+.dot8{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.rigthDisplay__decoration {
+    position: relative;
+}
+
+.dot9{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot10{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot11{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
+
+.dot12{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(126,67,82,0.8);
+    z-index: 10000;
+}
