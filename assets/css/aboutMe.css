@@ -1,0 +1,118 @@
+
+
+/* modal__wrap */
+.aboutMe {
+    z-index: 100000;
+}
+
+
+.aboutMe__cont {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    /* 코드 박스 가운데로 내려주기 위해 설정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+.aboutMe__box {
+    width: 70%;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.8);
+    /* 기본이 16px 0.5 = 8px */
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 20px -5px hsl(180deg 2% 10%);
+    transform: scale(0);
+}
+
+.aboutMe__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #73CDBD;
+    padding: 1rem 1rem 0.8rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px -5px rgba(25, 26, 26, 0.7);
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(0);
+
+}
+.aboutMe__close:hover {
+    background-color: #3B7A6F
+    
+    ;
+}
+.aboutMe__close svg {
+    color: #fff;
+}
+
+.aboutMe__inner {
+    padding: 70px;
+    color: #fff;
+    
+}
+.aboutMe__inner h3 {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.aboutMe__img img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* modal animation */
+.aboutMe__cont.show {     /*전체 배경*/
+    animation: foldOut 1s ease forwards;
+}
+.aboutMe__cont.show.hide {/*스크립트 박스*/
+    animation: foldIn 0.3s 0.5s ease backwards;
+}
+
+.aboutMe__cont.show .aboutMe__close { /*닫기 버튼*/
+    animation: zoomOut 0.3s 1.5s  ease forwards;
+}
+
+.aboutMe__cont.show.hide .aboutMe__close { /*닫기 버튼*/
+    animation: zoomIn 0.3s  ease forwards;
+}
+.aboutMe__cont.show .aboutMe__box {
+    animation: zoomOut 0.5s ease forwards;
+    /* 뒤에 숫자는 delay 시간 */
+}
+.aboutMe__cont.show.hide .aboutMe__box {
+    animation: zoomIn 0.5s ease forwards;
+}
+
+@keyframes foldOut {
+    0% {transform: scale(0) scaleY(0.002);}
+    50% {transform: scale(1) scaleY(0.002);}
+    100% {transform: scale(1) scaleY(1);}
+}
+@keyframes foldIn {
+    0% {transform: scale(1) scaleY(1);}
+    50% {transform: scale(1) scaleY(0.002);}
+    100% {transform: scale(0) scaleY(0.002);}
+}
+@keyframes zoomOut {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+@keyframes zoomIn {
+    0% {transform: scale(1);}
+    100% {transform: scale(0);}
+}
+@media (max-width:1100px) {
+    
+}
+@media (max-width : 800px) {
+    
+    .aboutMe__box {
+        width: 96%;
+    }
+}
