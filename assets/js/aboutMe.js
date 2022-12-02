@@ -1,17 +1,17 @@
 
 //모달
-const aboutMeBtn = document.querySelector(".aboutMeBtn");
-const aboutMeClose = document.querySelector(".aboutMe__close");
-const aboutMecont = document.querySelector(".aboutMe__cont");
+const modalBtn = document.querySelector(".modalBtn");
+const modalCont = document.querySelector(".modal__cont");
+const modalClose = document.querySelector(".modal__close");
 
 
 
-aboutMeBtn.addEventListener("click", () => {
-    aboutMecont.classList.add("show");
-    aboutMecont.classList.remove("hide");
+modalBtn.addEventListener("click", () => {
+    modalCont.classList.add("show");
+    modalCont.classList.remove("hide");
 })
-aboutMeClose.addEventListener("click",()=>{
-    aboutMecont.classList.add("hide");
+modalClose.addEventListener("click",()=>{
+    modalCont.classList.add("hide");
 
 })
 
