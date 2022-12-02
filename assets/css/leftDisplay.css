@@ -12,6 +12,7 @@
     color: #B8405E;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .logo_icon{
     background-image: url(../img/icons/kiwibird.svg);
