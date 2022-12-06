@@ -3,6 +3,7 @@
     /* height: 790px; */
     display: grid;
     grid-template-rows: 1fr 2.5fr 1fr;
+    grid-template-columns: 100%;
     row-gap: 10px;
 }
 
@@ -336,7 +337,7 @@
 .centerDisplay__middle__monitor a img {
     width: 95%;
     border-radius: 10px;
-    border: 10px solid #EEE6CE;
+    /* border: 10px solid #EEE6CE; */
 }
 .centerDisplay__middle__monitor a{
     /* display: block;
@@ -346,7 +347,9 @@
 /* .centerDisplay__middle__monitor .img:hover{
     background-color: rgba(0,0,0,0.5);
 } */
-
+.mywork {
+    /* background: #EEE6CE; */
+}
 
 .centerDisplay__bottom {
 display: grid;
