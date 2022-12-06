@@ -18,6 +18,11 @@
 
     <link rel="stylesheet" href="assets/css/aboutMe.css">
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
 
 </head>
 <body>
@@ -45,14 +50,29 @@
                         <div class="dot ir">dot</div>
                         <div class="dot ir">dot</div>
                         <div class="dot ir">dot</div>
-                        <div class="dot ir">dot</div>
                     </div>
                 </div>
                 <div class="line"></div>
 
+                
                 <div class="leftDisplay__gallary">
-                    <div class="leftDisplay__monitor">
-                        <div class="img">
+                    <div class="swiper mySwiper">
+                        <div class="leftDisplay__monitor swiper-wrapper">
+                            <div class="swiper-slide"><div class="img">
+                                <img src="assets/img/myphoto/mainPhoto.jpg" alt="내 사진">
+                            </div></div>
+                            <div class="swiper-slide"><div class="img">
+                                <img src="assets/img/myphoto/bird1.jpg" alt="내 사진">
+
+                            </div></div>
+                            <div class="swiper-slide"><div class="img">
+                                <img src="assets/img/myphoto/bird2.jpg" alt="내 사진">
+
+                            </div></div>
+                            <div class="swiper-slide"><div class="img">
+                                <img src="assets/img/myphoto/doll.jpg" alt="내 사진">
+
+                            </div></div>
                         </div>
                     </div>
                 </div>
@@ -361,6 +381,28 @@
     </main>
 
     <script src="/assets/js/aboutMe.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper3 = new Swiper(".mySwiper", {
+        grabCursor: true,
+        effect: "creative",
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+        creativeEffect: {
+          prev: {
+            shadow: false,
+            translate: ["-0%", 0, -1],
+          },
+          next: {
+            translate: ["100%", 0, -1],
+          },
+        },
+      });
+      </script>
 
 </body>
 </html>

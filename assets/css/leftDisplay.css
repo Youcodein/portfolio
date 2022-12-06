@@ -118,24 +118,29 @@
     align-items: center;
 }
 .leftDisplay__gallary {
-    padding: 20px;
+    padding: 20px !important;
 }
 .leftDisplay__monitor {
     margin: 0px auto;
     display: flex;
+    border: 8px solid #b8405e;
     align-items: center;
-    /* width: 300px; */
-    height: 300px;
-    background: #b8405e;
+    width: 300px !important;
+    height: 300px !important;
+    /* background: #b8405e; */
     border-radius: 20px;
 }
 .img {
-    background: url(../img/mainPhoto.jpg);
-    width: 91%;
-    height: 91%;
+    /* background: url(../img/mainPhoto.jpg); */
+    width: 90%;
+    height: 100%;
     border-radius: 15px;
-    margin: auto;
+    /* margin: auto; */
     background-size: cover;
+}
+.img img {
+    height: 300px;
+    border-radius: 15px;
 }
 
 .leftDisplay__topBtn {
