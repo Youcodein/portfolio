@@ -141,11 +141,14 @@
     background-size: cover;
     /* background: #b8405e; */
 }
-.img img {
+.img > img {
     width: 300px;
     height: 300px;
     /* border-radius: 15px; */
 }
+.img > img:hover {
+}
+
 
 .leftDisplay__topBtn {
     display: flex;
