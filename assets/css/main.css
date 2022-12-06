@@ -6,17 +6,17 @@ body {
 }
 
 .container {
-    padding: 0 15%;
+    margin: auto;
 }
 .container2{
     padding: 0 20px;
 }
 
 .fullDisplay {
-    margin-top: 50px;
+    width: 1290px;
     display: grid;
-    grid-template-columns: 1fr 1.5fr 0.8fr;
-    column-gap: 20px;
+    grid-template-columns: 29% 45% 24%;
+    column-gap: 1%;
 }
 
 
