@@ -151,8 +151,12 @@
                         </div>
                     </div>
                     <div class="slider__btn">
-                        <button class="prev"></button>
-                        <button class="next"></button>
+                        <button class="prev">
+                            <img src="assets/img/icons/left.svg" alt="prev">
+                        </button>
+                        <button class="next">
+                            <img src="assets/img/icons/right.svg" alt="next">
+                        </button>
                     </div>
                 </div>
                 
@@ -244,14 +248,30 @@
                             <div class="dots"></div>
                         </div>
                         <div class="sumSlider__btn">
-                            <button class="sumPrev"></button>
-                            <button class="sumNext"></button>
+                            <button class="sumPrev">
+                                <img src="assets/img/icons/left.svg" alt="sumPrev">
+                            </button>
+                            <button class="sumNext">
+                                <img src="assets/img/icons/right.svg" alt="sumNext">
+
+                            </button>
                         </div>
                     </div>
                     
-                    <div class="centerDisplay__middle__monitor git ">
-                        <a href="https://youcodein.github.io/codingclass/coding/javascript/effect/gameEffect01.html"> <img src="assets/img/myWork.jpg" alt=""></a>
+                    <div class="centerDisplay__middle__Gallary">
+                        <div class="swiper mySwiper myworkGallary">
+                            <div class="swiper-wrapper">
+                                <div class="centerDisplay__middle__monitor">
+                                <div class="swiper-slide mywork">
+                                        <a href="https://youcodein.github.io/codingclass/coding/javascript/effect/gameEffect01.html"> <img src="assets/img/myWork.jpg" alt=""></a>
+                                </div>
+                            </div>
+
+                            </div>
+                            
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="centerDisplay__bottom">
                     <div class="centerDisplay__bottom__SNS">
@@ -408,6 +428,26 @@
         },
       });
       </script>
+
+<script>
+    var swiper4 = new Swiper(".mySwiper.myworkGallary", {
+    grabCursor: false,
+    effect: "creative",
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+    creativeEffect: {
+      prev: {
+        shadow: false,
+        translate: ["-0%", 0, -1],
+      },
+      next: {
+        translate: ["100%", 0, -1],
+      },
+    },
+  });
+  </script>
 
 </body>
 </html>
