@@ -118,17 +118,19 @@
     align-items: center;
 }
 .leftDisplay__gallary {
-    padding: 20px !important;
+    padding: 20px 26px !important;
+    box-sizing: border-box !important;
 }
 .leftDisplay__monitor {
     margin: 0px auto;
     display: flex;
-    border: 8px solid #b8405e;
+    border: 11px solid #b8405e;
     align-items: center;
     width: 300px !important;
     height: 300px !important;
     /* background: #b8405e; */
-    border-radius: 20px;
+    border-radius: 15px;
+    z-index: 10000;
 }
 .img {
     /* background: url(../img/mainPhoto.jpg); */
@@ -137,10 +139,12 @@
     border-radius: 15px;
     /* margin: auto; */
     background-size: cover;
+    /* background: #b8405e; */
 }
 .img img {
+    width: 300px;
     height: 300px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .leftDisplay__topBtn {
