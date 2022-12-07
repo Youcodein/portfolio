@@ -319,20 +319,20 @@
   }
 
 .centerDisplay__middle__monitor {
-    /* width: 100%; */
+    width: 96% !important;
     /* height: 80%;  */
     /* background: #EEE6CE; */
+    border: 10px solid #EEE6CE;
     margin-top: 25px;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    
 }
 
 .centerDisplay__middle__monitor a{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background: #000;
     border-radius: 10px;
 }
@@ -351,6 +351,8 @@
 } */
 .mywork {
     /* background: #EEE6CE; */
+}
+.myworkGallary {
 }
 
 .centerDisplay__bottom {
