@@ -333,17 +333,19 @@
 .centerDisplay__middle__monitor a{
     display: flex;
     justify-content: center;
+    background: #000;
+    border-radius: 10px;
 }
 .centerDisplay__middle__monitor a img {
-    width: 95%;
     border-radius: 10px;
+	opacity: 1;
+	transition: .3s ease-in-out;
     /* border: 10px solid #EEE6CE; */
 }
-.centerDisplay__middle__monitor a{
-    /* display: block;
-    margin: 0 auto;
-    width: 96%; */
+.centerDisplay__middle__monitor a:hover img{
+    opacity: .5;
 }
+
 /* .centerDisplay__middle__monitor .img:hover{
     background-color: rgba(0,0,0,0.5);
 } */
