@@ -9,7 +9,7 @@
 
 .rigthDisplay__sidebar{
     background: #eee6ce;
-    padding: 20px 10px;    
+    padding: 15px 10px;    
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -36,7 +36,7 @@
     padding: 20px;
     box-sizing: border-box;
     background: #eee6ce;
-    height: 150px;
+    height: 180px;
     border-radius: 5px;
     border: 5px solid #73CDBD;
     margin-bottom: 20px;
@@ -51,6 +51,26 @@
     font-weight: 600;
     font-size: 18px;
     color: #B8405E;
+}
+.rigthDisplay__musicplayer__view{
+   
+}
+
+.rigthDisplay__musicplayer__view .music__view__title{
+    margin: 10px 0;
+    text-align: center;
+}
+.rigthDisplay__musicplayer__view .music__view__title h3{
+    font-weight: 600;
+    font-size: 25px;
+    color: #B8405E;
+    margin: 5px 0;
+}
+.rigthDisplay__musicplayer__view .music__view__title h4{
+    font-weight: 500;
+    font-size: 16px;
+    color: #B8405E;
+    margin: 5px 0;
 }
 .musicPlayer__btn{
     position: relative;
@@ -110,7 +130,6 @@
 .rigthDisplay__musicplayer__control{
     width: 100%;
     height: 100px;
-    padding-top: 50px;
 }
 .progress{
     width: 100%;
@@ -150,24 +169,24 @@
     background-size: cover;
     position: absolute;
     left: 130px;
-    bottom: 6px;
+    bottom: 10px;
 }
 
 
 
 .rigthDisplay__decoration{
     background: #eee6ce;
-    height: 150px;
+    height: 130px;
     border-radius: 5px;
     margin-bottom: 20px;
-    padding: 25px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 .rigthDisplay__decoration__title {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-items: center
 }
 .rigthDisplay__decoration__title h3 {
@@ -193,11 +212,11 @@
 .deco1 {
     position: relative;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #F7EFDD;
-    border: 5px solid #B8405E;
+    border: 4px solid #B8405E;
     transform: rotate(0deg);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 
@@ -239,12 +258,12 @@
 .deco2 {
     position: relative;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     background: #262A53;
-    border: 5px solid #B8405E;
+    border: 4px solid #B8405E;
 }
 
 .deco2::before {
@@ -282,12 +301,12 @@
 .deco3 {
     position: relative;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #ECB236;
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-    border: 5px solid #B8405E;
+    border: 4px solid #B8405E;
 }
 
 .deco3::before {
@@ -325,12 +344,12 @@
 .deco4 {
     position: relative;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     background: #B8405E;
-    border: 5px solid #B8405E;
+    border: 4px solid #B8405E;
 }
 
 .deco4::before {
@@ -366,8 +385,9 @@
   }
 
 .btnDeco {
-    margin: 9px auto;
-    display: block;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
     width: 5px;
     height: 20px;
     border-radius: 50px;
