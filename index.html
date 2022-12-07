@@ -430,6 +430,7 @@
         var swiper3 = new Swiper(".mySwiper.photoGallary", {
         grabCursor: false,
         effect: "creative",
+        touchRatio: 0,//드래그 금지
         navigation: {
           nextEl: ".next",
           prevEl: ".prev",
@@ -454,6 +455,7 @@
       nextEl: ".sumNext",
       prevEl: ".sumPrev",
     },
+    touchRatio: 0,//드래그 금지
     creativeEffect: {
       prev: {
         shadow: false,
