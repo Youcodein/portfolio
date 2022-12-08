@@ -121,6 +121,40 @@
     margin-right: 20px;
     font-weight: 600;
 }
+.ability {
+    
+}
+.ability__cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ability__HTML{
+}
+.ability__HTML__img{
+    background: url(../img/ability/html.png);
+    width: 58px;
+    height: 58px;
+    background-size: contain;
+}
+
+.ability__CSS__img{
+    background: url(../img/ability/css.png);
+    width: 58px;
+    height: 58px;
+    background-size: contain;
+}
+.ability__JAVASCRIPT__img{
+    background: url(../img/ability/javascript.png);
+    width: 58px;
+    height: 58px;
+    background-size: contain;
+}
+.ability__PHP__img{
+    background: url(../img/ability/php.png);
+    width: 58px;
+    height: 58px;
+    background-size: contain;
+}
 
 /* modal animation */
 .aboutMe__cont.show {     /*전체 배경*/

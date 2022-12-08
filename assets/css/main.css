@@ -2,9 +2,7 @@
 
 body {
     background-image: url(../img/Pattern.png);
-    background-size: contain;
-    
-    
+    background-size: 100% 100%;
 }
 
 .container {
@@ -20,11 +18,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .fullDisplay {
-    width: 80rem;
+    width: 1290px;
     display: grid;
     grid-template-columns: 29% 45% 24%;
     column-gap: 1%;
