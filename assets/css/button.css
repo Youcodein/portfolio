@@ -1,4 +1,4 @@
-.toggle-button-cover {
+/* .toggle-button-cover {
     display: table-cell;
     position: relative;
     
@@ -73,12 +73,12 @@
     background-color: #ebf7fc;
     transition: 0.3s ease all;
     z-index: 1;
-  }
+  } */
 
 
 
   /* Button 3 */
-#button-3 .knobs:before {
+/* #button-3 .knobs:before {
     content: "YES";
     position: absolute;
     top: 4px;
@@ -113,4 +113,42 @@
   
   #button-3 .checkbox:checked ~ .layer {
     background-color: #fcebeb;
-  }
+  } */
+
+
+  /* swipe */
+
+  /* Button 1 */
+.buttons .btnBall:before {
+  content: "YES";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.buttons .checkbox:checked + .btnBall:before {
+  content: "NO";
+  left: 42px;
+  background-color: #f44336;
+}
+
+.buttons .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+.buttons .btnBall,
+.buttons .btnBall:before,
+.buttons .layer {
+  transition: 0.3s ease all;
+}

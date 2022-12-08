@@ -69,7 +69,7 @@
     box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-
+/* swipe */
 .swipe__btn {
     margin: 0 auto;
     width: 300px;
@@ -88,7 +88,7 @@
 .WEBD img {
     width: 10%;
 }
-.swipeFED {
+/* .swipeFED {
     width: 65px;
     height: 27px;
     background: #B8405E;
@@ -103,20 +103,105 @@
     height: 20px;
     border-radius: 50%;
     background: #eee6ce;
+} */
+.buttons .btnBall:before {
+    content: " ";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #B8405E;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+  }
+  
+  .buttons .checkbox:checked + .btnBall:before {
+    content: " ";
+    left: 42px;
+    background-color: #ebf7fc;
+  }
+  
+  .buttons .checkbox:checked ~ .layer {
+    background-color: #B8405E;
+  }
+  
+  .buttons .btnBall,
+  .buttons .btnBall:before,
+  .buttons .layer {
+    transition: 0.3s ease all;
+  }
+
+.btnBall,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
+
+.buttons {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  /* margin: -20px auto 0 auto; */
+  overflow: hidden;
+}
+
+.buttons.r,
+.buttons.r .layer {
+  border-radius: 100px;
+}
+
+
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.btnBall {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+
 .WEBD {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .swipeWEBD {
-    width: 65px;
-    height: 27px;
-    background: #B8405E;
+    /* width: 65px; */
+    /* height: 27px; */
+    /* background: #B8405E; */
     border-radius: 70px;
     display: flex;
     align-items: center;
 }
+
+
+/*  */
 .leftDisplay__gallary {
     padding: 20px 26px !important;
     box-sizing: border-box !important;
