@@ -352,8 +352,6 @@
     
     /* border: 10px solid #EEE6CE; */
 }
-.centerDisplay__middle__monitor a:hover img{
-}
 
 /* .centerDisplay__middle__monitor .img:hover{
     background-color: rgba(0,0,0,0.5);
@@ -362,10 +360,24 @@
 .cover {
     filter: brightness(1);
     transition: all 0.5s;
+    position: relative;
+}
+.cover::before {
+ 
 }
 .cover:hover{
     filter: brightness(0.5);
 
+}
+.cover::before:hover{
+    content: "YES";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #fff;
+    font-size: 20px;
 }
 .mywork {
     position: relative;

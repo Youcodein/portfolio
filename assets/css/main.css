@@ -24,7 +24,7 @@ body {
 }
 
 .fullDisplay {
-    width: 1290px;
+    width: 80rem;
     display: grid;
     grid-template-columns: 29% 45% 24%;
     column-gap: 1%;
