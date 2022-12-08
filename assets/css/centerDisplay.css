@@ -200,6 +200,12 @@
     width: 45%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.centerDisplay__middle__title .tit {
+    display: flex;
+    flex-wrap: wrap;
 }
 .centerDisplay__middle__title .mywork__Ico{
     width: 29px;

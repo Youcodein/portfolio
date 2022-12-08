@@ -101,6 +101,8 @@
     z-index: 10000;
 }
 
+
+
 .rigthDisplay__decoration {
     position: relative;
 }
@@ -147,4 +149,17 @@
     border-radius: 50%;
     background: rgba(126,67,82,0.8);
     z-index: 10000;
+}
+
+
+.myLike .dots {
+    margin-top: 20px;
+    float: right;
+    width: 50px;
+    height: 27px;
+}
+.myLike .dots .dot {
+    width: 5px;
+    height: 5px;
+    margin: 1px;
 }

@@ -16,7 +16,12 @@
 .rigthDisplay__sidebar__title {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.rigthDisplay__sidebar__title .tit {
+    display: flex;
+    flex-wrap: wrap;
 }
 .rigthDisplay__sidebar h2 {
     font-weight: 600;
@@ -24,8 +29,8 @@
     color: #B8405E;
 }
 .sidebar__Ico {
-    width: 32px;
-    height: 26px;
+    width: 27px;
+    height: 21px;
     margin-right: 10px;
     background-repeat: no-repeat;
     background-size: cover;
