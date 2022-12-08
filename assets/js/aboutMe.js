@@ -1,41 +1,61 @@
 
 //모달
-var modalBtn = document.querySelector(".modalBtn");
-var modalCont = document.querySelector(".modal__cont");
-var modalClose = document.querySelector(".modal__close");
-// var funcs = [];
+var funcs = [];
 
 
 
 
-// function Modal(num) {
-//     return function () {
-//         modalBtn.addEventListener("click", () => {
-//             modalCont.classList.add("show");
-//             modalCont.classList.remove("hide");
-//         })
-        
-//         modalClose.addEventListener("click",()=>{
-//             modalCont.classList.add("hide");
-        
-//         })
-//     };
-// }
+// Modal을 가져옵니다.
+var modalCont = document.getElementsByClassName("modal__cont");
+// Modal을 띄우는 클래스 이름을 가져옵니다.
+var modalBtn = document.getElementsByClassName("modalBtn");
+// Modal을 닫는 close 클래스를 가져옵니다.
+var modalClose = document.getElementsByClassName("modal__close");
+var funcs = [];
+ 
+// Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+function Modal(num) {
+  return function() {
+    // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
+    modalBtn[num].onclick =  function() {
+        modalCont[num].classList.add("show");
+        modalCont[num].classList.remove("hide");
+        console.log(num);
+    };
+ 
+    // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+    modalClose[num].onclick = function() {
+        modalCont[num].classList.add("hide");
+    };
+  };
+} 
 
-// for (var i = 0; i < modalBtn.length; i++) {
-//     funcs[i] = Modal(i);
-// }
-
-// for(var j = 0; j < modalBtn.length; j++) {
-//     funcs[j]();
+// 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
+for(var i = 0; i < modalBtn.length; i++) {
+  funcs[i] = Modal(i);
+}
+ 
+// 원하는 Modal 수만큼 funcs 함수를 호출합니다.
+for(var j = 0; j < modalBtn.length; j++) {
+  funcs[j]();
+}
+ 
+ 
+// Modal 영역 밖을 클릭하면 Modal을 닫습니다.
+// window.onclick = function(event) {
+//   if (event.target.className == "modal") {
+//       event.target.style.display = "none";
 //   }
+// };
 
-modalBtn.addEventListener("click", () => {
-    modalCont.classList.add("show");
-    modalCont.classList.remove("hide");
-})
-modalClose.addEventListener("click",()=>{
-    modalCont.classList.add("hide");
 
-})
+
+// modalBtn.addEventListener("click", () => {
+//     modalCont.classList.add("show");
+//     modalCont.classList.remove("hide");
+// })
+// modalClose.addEventListener("click",()=>{
+//     modalCont.classList.add("hide");
+
+// })
 
