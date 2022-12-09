@@ -58,21 +58,25 @@ function whatColor(click) {
     console.log(click)
     switch (click) {
         case "deco1":
-            colorChage("var(--main-color1)");
+            colorChage1("var(--main-color1)");
+            colorChage2("var(--sub-color1)");
             break;
         case "deco2":
-            colorChage("var(--main-color2)");
+            colorChage1("var(--main-color2)");
+            colorChage2("var(--sub-color2)");
             break;
         case "deco3":
-            colorChage("var(--main-color3)");
+            colorChage1("var(--main-color3)");
+            colorChage2("var(--sub-color3)");
             break;
         case "deco4":
-            colorChage("var(--main-color4)");
+            colorChage1("var(--main-color4)");
+            colorChage2("var(--sub-color4)");
             break;
     }
 }
 
-function colorChage(color) {
+function colorChage1(color) {
         leftDisplay.style.backgroundColor = color;
         RightDisplaySidebar.style.backgroundColor = color;
         RightnDisplayMusicPlayer.style.backgroundColor = color;
@@ -87,6 +91,14 @@ function colorChage(color) {
         snsBtnBg.forEach((ec) => {
             ec.style.backgroundColor = color;
         });
+}
+
+function colorChage2(color) {
+    centerDisplayTop.style.backgroundColor = color;
+    centerDisplayMiddle.style.backgroundColor = color;
+    centerDisplayMBottomSNS.style.backgroundColor = color;
+    centerDisplayMBottomContactMe.style.backgroundColor = color;
+    RightDisplay.style.backgroundColor = color;
 }
 
 
