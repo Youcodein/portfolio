@@ -7,6 +7,7 @@ const RightDisplaySidebar = document.querySelector(".rigthDisplay__sidebar");
 const RightnDisplayMusicPlayer = document.querySelector(".rigthDisplay__musicplayer");
 const RightnDisplayDecoration = document.querySelector(".rigthDisplay__decoration");
 const RightDisplayGame = document.querySelector(".rigthDisplay__game");
+const centerDisplayMonitor = document.querySelector(".centerDisplay__middle__monitor")
 
 // sub
 const centerDisplayTop = document.querySelector(".centerDisplay__top");
@@ -82,6 +83,7 @@ function colorChage1(color) {
         RightnDisplayMusicPlayer.style.backgroundColor = color;
         RightnDisplayDecoration.style.backgroundColor = color;
         RightDisplayGame.style.backgroundColor = color;
+        centerDisplayMonitor.style.borderColor = color;
         centerDisplayTopBtnBg.forEach((ea) => {
             ea.style.backgroundColor = color;
         });
