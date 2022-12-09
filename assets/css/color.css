@@ -16,3 +16,7 @@
     --btnDeco-color3: #31326F;
     --btnDeco-color4: #ECB236;
 }
+
+.active {
+    background: #262A53 !important;
+}
