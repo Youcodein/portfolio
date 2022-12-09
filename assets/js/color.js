@@ -7,7 +7,8 @@ const RightDisplaySidebar = document.querySelector(".rigthDisplay__sidebar");
 const RightnDisplayMusicPlayer = document.querySelector(".rigthDisplay__musicplayer");
 const RightnDisplayDecoration = document.querySelector(".rigthDisplay__decoration");
 const RightDisplayGame = document.querySelector(".rigthDisplay__game");
-const centerDisplayMonitor = document.querySelector(".centerDisplay__middle__monitor")
+const centerDisplayMonitor = document.querySelector(".centerDisplay__middle__monitor");
+const leftDisplayMonitor = document.querySelector(".leftDisplay__monitor");
 
 // sub
 const centerDisplayTop = document.querySelector(".centerDisplay__top");
@@ -101,6 +102,7 @@ function colorChage2(color) {
     centerDisplayMBottomSNS.style.backgroundColor = color;
     centerDisplayMBottomContactMe.style.backgroundColor = color;
     RightDisplay.style.backgroundColor = color;
+    leftDisplayMonitor.style.borderColor = color;
 }
 
 
