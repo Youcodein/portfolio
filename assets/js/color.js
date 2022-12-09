@@ -35,6 +35,10 @@ const line1 = document.querySelector(".line");
 const line2 = document.querySelector(".line2");
 const line3 = document.querySelector(".line3");
 
+// font
+const headerTitle = document.querySelector(".leftDisplay__header");
+const modeChangeTitle = document.querySelector(".modeChange__title h2");
+
 let colorList = [
     "btn1",
     "btn2",
@@ -99,6 +103,7 @@ function colorChage1(color1) {
         snsBtnBg.forEach((ec) => {
             ec.style.backgroundColor = color1;
         });
+        
 }
 
 function colorChage2(color2) {
@@ -108,10 +113,24 @@ function colorChage2(color2) {
     centerDisplayMBottomContactMe.style.backgroundColor = color2;
     RightDisplay.style.backgroundColor = color2;
     leftDisplayMonitor.style.borderColor = color2;
+    dot.forEach((ed) => {
+        ed.style.backgroundColor = color2;
+    });
+    line1.style.backgroundColor = color2;
+
+    line2.style.backgroundColor = color2;
+
+    line3.style.backgroundColor = color2;
+    headerTitle.style.color = color2;
+    modeChangeTitle.style.color = color2;
+
 }
 
 function colorChage3(color3) {
     mainBG.style.backgroundColor = color3;
+}
+
+function colorChage4(color4) {
 }
 
 
