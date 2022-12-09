@@ -7,7 +7,6 @@ const RightDisplaySidebar = document.querySelector(".rigthDisplay__sidebar");
 const RightnDisplayMusicPlayer = document.querySelector(".rigthDisplay__musicplayer");
 const RightnDisplayDecoration = document.querySelector(".rigthDisplay__decoration");
 const RightDisplayGame = document.querySelector(".rigthDisplay__game");
-const centerDisplayTopBtnBg = document.querySelectorAll(".centerDisplay__top .topBtn");
 
 // sub
 const centerDisplayTop = document.querySelector(".centerDisplay__top");
@@ -19,6 +18,7 @@ const RightDisplay = document.querySelector(".rightDisplay");
 
 
 // btnBg
+const centerDisplayTopBtnBg = document.querySelectorAll(".centerDisplay__top .topBtn");
 const centerDisplayMiddleTitle = document.querySelectorAll(".centerDisplay__middle__title");
 const snsBtnBg = document.querySelectorAll(".snsBtn");
 
@@ -78,8 +78,14 @@ function colorChage(color) {
         RightnDisplayMusicPlayer.style.backgroundColor = color;
         RightnDisplayDecoration.style.backgroundColor = color;
         RightDisplayGame.style.backgroundColor = color;
-        centerDisplayTopBtnBg.forEach((e) => {
-            e.style.backgroundColor = color;
+        centerDisplayTopBtnBg.forEach((ea) => {
+            ea.style.backgroundColor = color;
+        });
+        centerDisplayMiddleTitle.forEach((eb) => {
+            eb.style.backgroundColor = color;
+        });
+        snsBtnBg.forEach((ec) => {
+            ec.style.backgroundColor = color;
         });
 }
 
