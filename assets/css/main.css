@@ -1,8 +1,9 @@
 
 
 body {
-    background-image: url(../img/Pattern.png);
+    background-image: url(../img/mainimg.png);
     background-size: 100% 100%;
+    background-color: var(--bg-color1);
 }
 
 .container {
