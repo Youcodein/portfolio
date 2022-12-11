@@ -15,8 +15,26 @@
     --btnDeco-color2: #ECB236;
     --btnDeco-color3: #31326F;
     --btnDeco-color4: #ECB236;
+
+    --fontColorOp1: rgba(184, 64, 94, 0.7);
+    --fontColorOp2: rgba(255, 227, 227, 0.7);
+    --fontColorOp3: rgba(49, 50, 111, 0.7);
+    --fontColorOp4: rgba(238, 230, 206, 0.7);
+
+    --boxShadow1: #591A2A;
+    --boxShadow2: #C37F7F;
+    --boxShadow3: #090921;
+    --boxShadow4: #A4966E;
+
+    --white: #fff;
 }
 
 .mainColor{
-    background: var(--main-color1) !important;
+    background: var(--main-color1);
+}
+.subColor {
+    background: var(--sub-color1);
+}
+.fontColorOp {
+    color: var(--fontColorOp1);
 }

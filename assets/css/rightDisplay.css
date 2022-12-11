@@ -176,6 +176,16 @@
     left: 130px;
     bottom: 10px;
 }
+.control .stop{
+    display: block;
+    width: 11px;
+    height: 20px;
+    background: url(../img/icons/musicStop.svg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 130px;
+    bottom: 10px;
+}
 
 
 
