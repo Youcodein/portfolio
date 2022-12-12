@@ -13,6 +13,24 @@ const resultScore = tetrisWrap2.querySelector(".tetris__score span");
 const resultTime = tetrisWrap2.querySelector(".tetris__total .time span");
 const resultLine = tetrisWrap2.querySelector(".tetris__total .tetrisline span");
 
+
+const myWork = document.querySelector(".centerSection");
+const game = document.querySelector(".centerGame");
+
+const gameStartBtn = document.querySelector(".gameStartBtn");
+
+gameStartBtn.addEventListener("click", () => {
+    myWork.classList.remove("show");
+    game.classList.add("show");
+})
+
+const goBackBtn = document.querySelector(".goBack");
+
+goBackBtn.addEventListener("click", () => {
+    myWork.classList.add("show");
+    game.classList.remove("show");
+})
+
 // const TetrisIcon2 = document.querySelector(".icon4");
 // const TetrisCloseBtn = document.querySelector(".tetris__close");
 
@@ -21,8 +39,8 @@ const resultLine = tetrisWrap2.querySelector(".tetris__total .tetrisline span");
 // let tetrisEndMusic = new Audio("../assets/audio/up.mp3");
 
 // variables
-let rows = 16;
-let cols = 11;
+let rows = 18;
+let cols = 13;
 let tetrisScore = 0;
 let duration = 500;
 let downInterval;
