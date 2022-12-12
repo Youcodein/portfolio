@@ -1,11 +1,46 @@
 /* centerDisplay */
+.centerSection {
+    display: none;
+}
+.centerSection.show {
+    display: block;
+}
 .centerDisplay {
+    /* display: none; */
     /* height: 790px; */
     display: grid;
     grid-template-rows: 1fr 2.5fr 1fr;
     grid-template-columns: 100%;
     row-gap: 10px;
 }
+
+.centerGame {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* background: var(--sub-color1); */
+    border-radius: 10px;
+   
+}
+.gameSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.gameView{
+    background: rgba(0,0,0,0.5);
+    width: 90%;
+    height: 93%;
+    border: 10px solid var(--main-color1);
+    border-radius: 10px;
+}
+.centerGame.show {
+    display: block;
+}
+
 
 .centerDisplay__top {
     background: var(--sub-color1);

@@ -2,7 +2,7 @@
 
 body {
     background-image: url(../img/mainimg.png);
-    background-size: 100% 100%;
+    background-size: contain;
     background-color: var(--bg-color1);
 }
 
