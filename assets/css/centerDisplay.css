@@ -34,6 +34,7 @@
     background: rgba(0,0,0,0.5);
     /* width: 90%;
     height: 93%; */
+    /* height: 50vw; */
     border: 10px solid var(--main-color1);
     border-radius: 10px;
 }

@@ -421,11 +421,18 @@
     color: var(--sub-color1);
     padding: 20px;
 }
-.gameRanking__title h2{
+.gameList__title h2{
     font-size: 20px;
     font-weight: 600;
     color: var(--sub-color1);
     padding: 0 30px 10px;
+}
+
+.gameList__games {
+    padding: 30px;
+    box-sizing: border-box;
+
+
 }
 .gameRanking {
     text-align: center;
@@ -433,14 +440,19 @@
    box-sizing: border-box;
     background: rgba(0,0,0,0.6);
     border-radius: 10px;
-    padding: 15px;
     margin: 0 auto;
 }
-.gameRanking ul li {
+.gameList__games ul li {
     font-size: 17px;
     font-weight: 500;
-    color: #fff;
     line-height: 1.5;
+    padding: 10px;
+}
+.gameList__games ul li:hover {
+    background: rgba(0,0,0,0.6);
+    color: var(--main-color1);
+    cursor: pointer;
+
 }
 
 .gameStartBtn{

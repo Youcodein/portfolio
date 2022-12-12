@@ -14,22 +14,7 @@ const resultTime = tetrisWrap2.querySelector(".tetris__total .time span");
 const resultLine = tetrisWrap2.querySelector(".tetris__total .tetrisline span");
 
 
-const myWork = document.querySelector(".centerSection");
-const game = document.querySelector(".centerGame");
 
-const gameStartBtn = document.querySelector(".gameStartBtn");
-
-gameStartBtn.addEventListener("click", () => {
-    myWork.classList.remove("show");
-    game.classList.add("show");
-})
-
-const goBackBtn = document.querySelector(".goBack");
-
-goBackBtn.addEventListener("click", () => {
-    myWork.classList.add("show");
-    game.classList.remove("show");
-})
 
 // const TetrisIcon2 = document.querySelector(".icon4");
 // const TetrisCloseBtn = document.querySelector(".tetris__close");

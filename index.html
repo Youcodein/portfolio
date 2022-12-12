@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" href="assets/css/button.css"> -->
     <link rel="stylesheet" href="assets/css/decoDot.css">
     <link rel="stylesheet" href="assets/css/tetris.css">
+    <link rel="stylesheet" href="assets/css/searchgame.css">
+    <link rel="stylesheet" href="assets/css/memory.css">
     <link rel="stylesheet" href="assets/css/leftDisplay.css">
     <link rel="stylesheet" href="assets/css/centerDisplay.css">
     <link rel="stylesheet" href="assets/css/rightDisplay.css">
@@ -654,7 +656,7 @@
                                     돌아가기
                                 </button>
 
-                                <div class="tetris__wrap show">
+                                <div class="tetris__wrap">
 		
                                     <div class="tetris__inner">
                                         <div class="tetris__tit">
@@ -694,6 +696,386 @@
                                     
                                   </div>
                             <!-- 테트리스 -->
+
+                            <div class="search__wrap">
+                                <div class="search__header">
+                                  <div>xx</div>
+                                  <h2>CSS 속성 검색 게임</h2>
+                                  <div>xx</div>
+                                </div>
+                                <div class="search__inner">
+                                  <div class="search__audio">
+                                    <span class="play">
+                                      <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g clip-path="url(#clip0_333_15005)">
+                                          <path
+                                            d="M15 8C15.621 8.46574 16.125 9.06966 16.4721 9.76393C16.8193 10.4582 17 11.2238 17 12C17 12.7762 16.8193 13.5418 16.4721 14.2361C16.125 14.9303 15.621 15.5343 15 16"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                          <path
+                                            d="M17.7 5C18.7439 5.84365 19.586 6.91013 20.1644 8.12132C20.7429 9.33252 21.0431 10.6578 21.0431 12C21.0431 13.3422 20.7429 14.6675 20.1644 15.8787C19.586 17.0899 18.7439 18.1563 17.7 19"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                          <path
+                                            d="M6 15H4C3.73478 15 3.48043 14.8946 3.29289 14.7071C3.10536 14.5195 3 14.2652 3 14V9.99997C3 9.73476 3.10536 9.4804 3.29289 9.29287C3.48043 9.10533 3.73478 8.99997 4 8.99997H6L9.5 4.49997C9.5874 4.3302 9.73265 4.1973 9.90949 4.12526C10.0863 4.05323 10.2831 4.04683 10.4643 4.10722C10.6454 4.1676 10.799 4.29078 10.8972 4.45451C10.9955 4.61824 11.0319 4.81171 11 4.99997V19C11.0319 19.1882 10.9955 19.3817 10.8972 19.5454C10.799 19.7092 10.6454 19.8323 10.4643 19.8927C10.2831 19.9531 10.0863 19.9467 9.90949 19.8747C9.73265 19.8027 9.5874 19.6697 9.5 19.5L6 15Z"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_333_15005">
+                                            <rect width="24" height="24" fill="white" />
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </span>
+                                    <span class="stop">
+                                      <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g clip-path="url(#clip0_333_15004)">
+                                          <path
+                                            d="M15 8C15.7483 8.56124 16.3242 9.32114 16.6622 10.1933C17.0002 11.0655 17.0867 12.0151 16.912 12.934M15.535 15.536C15.3679 15.7031 15.1891 15.8582 15 16"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                          <path
+                                            d="M17.7 5C19.3049 6.29704 20.4154 8.10621 20.8454 10.1244C21.2754 12.1427 20.9988 14.2474 20.062 16.086M18.386 18.385C18.1679 18.6016 17.939 18.8068 17.7 19"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                          <path
+                                            d="M9.069 5.05397L9.5 4.49997C9.5874 4.3302 9.73265 4.1973 9.90949 4.12526C10.0863 4.05323 10.2831 4.04683 10.4643 4.10722C10.6454 4.1676 10.799 4.29078 10.8972 4.45451C10.9955 4.61824 11.0319 4.81171 11 4.99997V6.99997M11 11V19C11.0319 19.1882 10.9955 19.3817 10.8972 19.5454C10.799 19.7092 10.6454 19.8323 10.4643 19.8927C10.2831 19.9531 10.0863 19.9467 9.90949 19.8747C9.73265 19.8027 9.5874 19.6697 9.5 19.5L6 15H4C3.73478 15 3.48043 14.8946 3.29289 14.7071C3.10536 14.5195 3 14.2652 3 14V9.99997C3 9.73476 3.10536 9.4804 3.29289 9.29287C3.48043 9.10533 3.73478 8.99997 4 8.99997H6L7.294 7.33597"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                          <path
+                                            d="M3 3L21 21"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                          />
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_333_15004">
+                                            <rect width="24" height="24" fill="white" />
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </span>
+                                    <audio
+                                      id="audio"
+                                      src="../assets/audio/music_audio01.mp3"
+                                      loop="loop"
+                                    ></audio>
+                                    <!-- <audio id="audioC" src="../assets/audio/Button 3.m4a"></audio> -->
+                                    <audio id="audioF" src="../assets/audio/Error.m4a"></audio>
+                                    <div class="icon"></div>
+                                  </div>
+                        
+                                  <!-- <span>CSS 속성 검색 이벤트</span> -->
+                                  <h1>2분 동안 CSS 속성 검색하기</h1>
+                                  <p class="desc">
+                                    2분 동안 CSS 속성을 많이 검색하면 점수가 올라갑니다.<br />
+                                    힌트보기는 한번 이용할 수 있습니다.
+                                  </p>
+                        
+                                  <div class="search__time">
+                                    <span>2:00</span>
+                                  </div>
+                        
+                                  <div class="search__box">
+                                    <label for="search">검색하기</label>
+                                    <input
+                                      type="text"
+                                      id="search"
+                                      placeholder="CSS 속성을 입력해 주세요!"
+                                    />
+                                    <div class="start">버튼을 누르면 게임이 시작됩니다.</div>
+                                  </div>
+                        
+                                  <div class="search__info center">
+                                    <div class="search__total">전체 속성 갯수 : <span>0</span></div>
+                                    <div class="search__count">현재 맞춘 갯수 : <span>0</span></div>
+                                  </div>
+                        
+                                  <div class="search__answers"></div>
+                                  <div class="search__missAnswers"></div>
+                        
+                                  <div class="search__list"></div>
+                                </div>
+                              </div>
+                        
+                              <!-- CSS 속성 게임 -->
+
+                              <div class="memory__wrap">
+                                <div class="memory__inner">
+                                  <div class="memory__scoreView">점수 : <span>0</span></div>
+                                  <div class="memory__info">
+                                    <span class="memory__close">X</span>
+                                    <h1>메모리 카드 게임</h1>
+                                  </div>
+                                  <div class="memory__rules show">
+                                    <h2>게임 규칙</h2>
+                                    <p>
+                                      1. 처음에 보여준 카드의 그림과 순서를 외웁니다.<br />
+                                      2. 뒤집혀진 카드를 기억에 의존하여 뒤집습니다.<br />
+                                      3. 같은 카드 한 쌍을 뒤집으면 점수가 오릅니다.<br />
+                                      4. 제한 시간은 없습니다.<br />
+                                      5. 지금부터 시작하세요!
+                                    </p>
+                                    <div class="memory__start__btn">게임 시작!</div>
+                                  </div>
+                                  <div class="memory__card">
+                                    <ul class="cards">
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/balloon.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/balloon.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/candyBox.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/candyBox.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img src="../assets/img/memory_card_game/coffin.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img src="../assets/img/memory_card_game/coffin.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/frankentein.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/frankentein.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img src="../assets/img/memory_card_game/owl.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img src="../assets/img/memory_card_game/owl.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/spellbook.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/spellbook.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/voodoodoll.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/voodoodoll.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/witchHat.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="view front">
+                                          <img
+                                            src="../assets/img/memory_card_game/One_Back_card.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="view back">
+                                          <img
+                                            src="../assets/img/memory_card_game/witchHat.svg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="memory_gameEnd">
+                                    <div class="memory__score">
+                                      <p>당신의 점수는 <span>100</span>점!</p>
+                                    </div>
+                                    <div class="memory__onemore">다시하기</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- 메모리 게임 -->
                             </div>
                         </div>
                     </div>
@@ -786,20 +1168,19 @@
                         <div class="rigthDisplay__game__title">
                             <h3 class="subColorFont">Game</h3>
                         </div>
-                        <div class="gameRanking__title">
-                            <h2 class="subColorFont">Ranking</h2>
+                        <div class="gameList__title">
+                            <h2 class="subColorFont">List</h2>
                         </div>
-                        <div class="gameRanking">
+                        <div class="gameList__games">
                             <ul>
-                                <li>1. name : score</li>
-                                <li>2. name : score</li>
-                                <li>3. name : score</li>
-                                <li>4. name : score</li>
+                                <li class="subColorFont searchGameBtn">Search Game</li>
+                                <li class="subColorFont flipCardGameBtn">Flip Card Game</li>
+                                <li class="subColorFont TetrisGameBtn">Tetris Game</li>
                             </ul>
                         </div>
-                        <button class="gameStartBtn subColor">
+                        <!-- <button class="gameStartBtn subColor">
                             <h2>Game Start</h2>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -812,6 +1193,8 @@
     <script src="assets/js/color2.js"></script>
     <script src="assets/js/game.js"></script>
     <script src="assets/js/tetris.js"></script>
+    <script src="assets/js/searchgame01.js"></script>
+    <script src="assets/js/memory.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 

@@ -1,0 +1,325 @@
+:root {
+  --htmlColor: #223547;
+}
+.search__wrap {
+  display: none;
+  background: #333;
+  /* width: 1000px; */
+  height: 700px;
+  /* height: 100%; */
+  padding: 0 10px 10px;
+  border-radius: 3px;
+  /* position: absolute; */
+  /* top: 10%; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+}
+.search__wrap.show {
+  display: block;
+}
+
+.search__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 5px 0 6px;
+}
+.search__header h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.search__inner {
+  width: 100%;
+  height: 93%;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  text-align: center;
+}
+.search__inner h1 {
+  margin-bottom: 10px;
+}
+/* box */
+.search__box {
+  margin-bottom: 20px;
+  position: relative;
+}
+.search__box label {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.search__box input {
+  border: 2px solid var(--htmlColor);
+  padding: 15px 40px;
+  width: 60%;
+  border-radius: 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.search__box .start {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: #223547;
+  width: 70%;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid var(--htmlColor);
+  padding: 15px 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.search__box .start:hover {
+  color: #223547;
+  background: #f1f3f6;
+}
+
+.search__list li {
+  text-align: left;
+  line-height: 1.7;
+}
+.search__list li.show {
+  display: block;
+}
+.search__list li.hide {
+  display: none;
+}
+.search__list span {
+  display: inline-block;
+  padding: 4px 15px 6px;
+  border: 1px solid var(--htmlColor);
+  border-radius: 50px;
+  margin: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.search__list span:hover {
+  background-color: var(--htmlColor);
+  color: #fff;
+}
+.search__list .line em {
+  float: right;
+  font-style: normal;
+}
+.search__list .line {
+  margin: 50px 0;
+}
+.search__list .line li {
+  background: #e3eaf5;
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+}
+.search__list .line li:hover {
+  background: #d3e2fa;
+  cursor: pointer;
+}
+.search__info {
+  text-align: right;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed var(--htmlColor);
+}
+.search__info.center {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+.search__info .type {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.search__info .keyword {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.search__info .keyword span {
+  border: 2px solid var(--htmlColor);
+  border-radius: 50px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.search__info .keyword span:hover {
+  background-color: var(--htmlColor);
+  color: #fff;
+  cursor: pointer;
+}
+.search__desc {
+  padding: 20px 40px 20px 80px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  background-color: var(--htmlColor);
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='8' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 16.958L21.5 21.958' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 22px 17px;
+}
+.search_click {
+  margin-bottom: 30px;
+}
+.search_click li {
+  display: inline;
+}
+.search_click li a {
+  display: inline-block;
+  border: 1px solid var(--htmlColor);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+.search_click li a:hover {
+  background-color: var(--htmlColor);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .search__wrap {
+    padding: 20px;
+  }
+  .search__wrap > span {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .search__wrap > h1 {
+    font-size: 44px;
+  }
+  .search__box input {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+}
+
+/* search .time */
+.search__wrap .desc {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.search__wrap .time {
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: var(--htmlColor);
+}
+.search__wrap .time span {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 100;
+}
+
+.search__answers {
+  border-bottom: 2px dashed var(--htmlColor);
+  padding-bottom: 40px;
+}
+.search__answers span {
+  display: inline-block;
+  background: var(--htmlColor);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 30px;
+  margin: 3px;
+}
+.search__missAnswers {
+  border-bottom: 2px dashed var(--htmlColor);
+  padding: 40px 0;
+}
+.search__missAnswers span {
+  display: inline-block;
+  border: 1px solid var(--htmlColor);
+  color: var(--htmlColor);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 3px;
+}
+/* audio */
+.search__audio {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search__audio span {
+  cursor: pointer;
+}
+.search__audio .play {
+  display: none;
+}
+
+/* search__result */
+.search__result {
+  position: fixed;
+  right: 1vw;
+  top: 1vw;
+  width: 40vw;
+  height: 40vw;
+  z-index: 10000;
+  transform: scale3d(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  border-radius: 50%;
+  background: #fff;
+  border: 6px solid var(--htmlColor);
+}
+.search__result.show {
+  display: flex;
+  animation: rubberBand 1s 0.6s ease forwards;
+}
+.search__result .result {
+  margin-top: 30px;
+  font-size: 1.3vw;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.search__result .restart {
+  background: var(--htmlColor);
+  color: #fff;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.search__result .restart:hover {
+  color: var(--htmlColor);
+  background: #fff;
+  border: 1px solid var(--htmlColor);
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(0, 0, 0);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

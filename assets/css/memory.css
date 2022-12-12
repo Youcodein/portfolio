@@ -1,0 +1,238 @@
+.memory__game {
+  display: none;
+}
+.memory__game.open {
+  display: block;
+}
+
+.memory__wrap {
+  display: none;
+}
+.memory__wrap.show {
+  display: block;
+}
+
+.memory__info {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.memory__inner {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  border: 3px solid rgb(244 224 255);
+  background: rgb(0, 0, 0);
+  /* position: absolute; */
+  /* left: 500px; */
+  /* top: 100px; */
+  animation: flicker 0.5s infinite alternate;
+}
+.memory__scoreView {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  right: 50px;
+}
+.memory__close {
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+}
+.memory__close:hover {
+  background: #666;
+}
+.memory__rules {
+  display: none;
+}
+.memory__rules.show {
+  display: block;
+  position: absolute;
+  color: #fff;
+  background: #666;
+  border: 1px solid #fff;
+  width: 400px;
+  padding: 25px;
+  text-align: center;
+  z-index: 10;
+  top: 160px;
+  left: 40px;
+}
+
+.memory__rules.show > h2 {
+  margin-bottom: 20px;
+}
+.memory__rules.show > p {
+  line-height: 1.5;
+}
+.memory__start__btn {
+  margin: 20px auto;
+  text-align: center;
+  width: 100px;
+  padding: 10px 5px;
+  background: #8040ff;
+  /* cursor: pointer; */
+}
+.memory__start__btn:hover {
+  background: #492396;
+}
+
+.memory_gameEnd {
+  display: none;
+  position: absolute;
+  top: 230px;
+  left: 120px;
+  text-align: center;
+  width: 250px;
+  padding: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: #666;
+}
+.memory_gameEnd.show {
+  display: block;
+}
+
+.memory__score {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.memory__onemore {
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  background: #8040ff;
+  color: #fff;
+  border: 1px dashed #fff;
+}
+.memory__onemore:hover {
+  background: #492396;
+}
+.memory__card {
+  padding: 30px;
+  /* margin-top: 90px; */
+}
+.memory__card .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.memory__card .cards li {
+  list-style: none;
+  letter-spacing: normal;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  position: relative;
+}
+.cards li .view.front img {
+  width: 100%;
+}
+.memory__card .cards li .view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: hsl(260, 100%, 63%);
+  backface-visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  padding: 10%;
+  border-radius: 20px;
+  user-select: none;
+  pointer-events: none;
+}
+.memory__card .cards li .front {
+  transform: rotateY(0deg);
+}
+.memory__card .cards li.flip .front {
+  transform: rotateY(180deg);
+}
+.memory__card .cards li .back {
+  transform: rotateY(-180deg);
+}
+.memory__card .cards li.flip .back {
+  transform: rotateY(0deg);
+}
+.memory__card .cards li.shakeX {
+  animation: shakeX 1s 1;
+}
+.memory__card .cards li.shakeY {
+  animation: shakeY 1s 1;
+}
+
+.cards li .view.front img {
+  width: 100%;
+}
+.cards li .view.back img {
+  width: 100%;
+}
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.1rem #fff,
+      0 0 3rem 2px rgb(140 115 255), inset 0 0 0rem 3px rgb(140 115 255),
+      0 0 0rem 3px rgb(140 115 255), inset -4px -5px 3rem 2px rgb(140 115 255);
+  }
+}
+
+@keyframes shakeX {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shakeY {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+}
