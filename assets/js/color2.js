@@ -30,6 +30,7 @@ const mainColorFont = document.querySelectorAll(".mainColorFont")
 const centerDisplayMonitor = document.querySelector(".centerDisplay__middle__monitor");
 
 const centerDisplayGameMonitor = document.querySelector(".gameView");
+const decorationBtnBorder = document.querySelectorAll(".decoBtn button");
 // const leftDisplayMonitor = document.querySelector(".leftDisplay__monitor");
 
 // subColor
@@ -153,6 +154,9 @@ function colorChage2(color2) {
     // leftDisplayMonitor.style.borderColor = color2;
     subColor.forEach((es) => {
         es.style.backgroundColor = color2;
+    });
+    decorationBtnBorder.forEach((ebb) => {
+        ebb.style.borderColor = color2;
     });
     subColorFont.forEach((esf) => {
         esf.style.color = color2;
