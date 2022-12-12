@@ -41,3 +41,6 @@
 .subColorFont {
     color: var(--sub-color1);
 }
+.mainColorFont{
+    color: var(--main-color1);
+}

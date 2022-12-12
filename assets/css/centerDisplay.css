@@ -719,3 +719,15 @@ column-gap: 20px;
 .centerDisplay__middle__title:hover > .list__menu {
     display:block;
 }
+.gameView {
+    position: relative;
+}
+.goBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
