@@ -121,6 +121,13 @@
     margin-right: 20px;
     font-weight: 600;
 }
+.test {
+
+}
+.aboutMe__bottom {
+    margin-top: 20px;
+    display: flex;
+}
 .ability {
     
 }
@@ -154,6 +161,40 @@
     width: 58px;
     height: 58px;
     background-size: contain;
+}
+.keyword__cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+.keyword__01{
+    padding: 10px;
+}
+.keyword__02{
+    padding: 10px;
+
+}
+.keyword__03{
+    padding: 10px;
+
+}
+.keyword__01__passion{
+    background: url(../img/keyword/passion.png);
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+}
+
+.keyword__02__attentive{
+    background: url(../img/keyword/attentive.png);
+    width: 68px;
+    height: 48px;
+    background-size: cover;
+}
+.keyword__03__thoughtful{
+    background: url(../img/keyword/thoughtful.png);
+    width: 41px;
+    height: 51px;
+    background-size: cover;
 }
 
 /* modal animation */
