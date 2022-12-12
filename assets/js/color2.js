@@ -96,28 +96,24 @@ function whatColor(click) {
             colorChage2("var(--sub-color1)");
             colorChage3("var(--bg-color1)");
             colorChage4("var(--fontColorOp1)");
-            colorChage5("var(--boxShadow1)");
             break;
         case "deco2":
             colorChage1("var(--main-color2)");
             colorChage2("var(--sub-color2)");
             colorChage3("var(--bg-color2)");
             colorChage4("var(--fontColorOp2)");
-            colorChage5("var(--boxShadow2)");
             break;
         case "deco3":
             colorChage1("var(--main-color3)");
             colorChage2("var(--sub-color3)");
             colorChage3("var(--bg-color3)");
             colorChage4("var(--fontColorOp3)");
-            colorChage5("var(--boxShadow3)");
             break;
         case "deco4":
             colorChage1("var(--main-color4)");
             colorChage2("var(--sub-color4)");
             colorChage3("var(--bg-color4)");
             colorChage4("var(--fontColorOp4)");
-            colorChage5("var(--boxShadow4)");
             break;
     }
 }
@@ -181,11 +177,11 @@ function colorChage4(color4) {
     })
 
 }
-function colorChage5(color5) {
-    squareShadow1.style.boxShadow = inherit | inherit | inherit | inherit | color5;
+// function colorChage5(color5) {
+//     squareShadow1.style.boxShadow = inherit | inherit | inherit | inherit | color5;
 
 
-}
+// }
 
 
 
