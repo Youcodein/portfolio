@@ -38,3 +38,6 @@
 .fontColorOp {
     color: var(--fontColorOp1);
 }
+.subColorFont {
+    color: var(--sub-color1);
+}

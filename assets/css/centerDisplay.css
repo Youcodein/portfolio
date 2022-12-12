@@ -660,3 +660,27 @@ column-gap: 20px;
     box-shadow: 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
   }
+
+  /* dropDown */
+  .centerDisplay__middle__title {
+    position: relative;
+  }
+
+  .list__menu {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 45px;
+    left: 0;
+    display: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px ;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 600;
+  }
+
+.centerDisplay__middle__title:hover > .list__menu {
+    display:block;
+}
