@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/color.css">
     <!-- <link rel="stylesheet" href="assets/css/button.css"> -->
     <link rel="stylesheet" href="assets/css/decoDot.css">
+    <link rel="stylesheet" href="assets/css/tetris.css">
     <link rel="stylesheet" href="assets/css/leftDisplay.css">
     <link rel="stylesheet" href="assets/css/centerDisplay.css">
     <link rel="stylesheet" href="assets/css/rightDisplay.css">
@@ -652,6 +653,47 @@
                                 <button class="goBack subColor mainColorFont">
                                     돌아가기
                                 </button>
+
+                                <div class="tetris__wrap show">
+		
+                                    <div class="tetris__inner">
+                                        <div class="tetris__tit">
+                                            <h2 class="tit">TETRIS GAME</h2>
+                                            <div class="tetris__close">X</div>
+                                        </div>
+                                        <div class="tetrits__cover show">
+                                            <div class="tetris__cover__bar">
+                                                <div class="tetrisCover__tit">do you wanna play?</div>
+                                            </div>
+                                            <div class="tetris__start">
+                                                <p>추억의 테트리스 게임~!</p>
+                                                <div class="tetris__startBtn">Game Start</div>
+                                            </div>
+                                          
+                                        </div>
+                                        <div class="tetris__restart">
+                                            <div class="desc">GAME OVER</div>
+                                                    <div class="tetris__total">
+                                                        <div class="time"><span>0</span> 초</div>
+                                                        <div class="tetrisline"><span>0</span> 줄</div>
+                                                    </div>
+                                                    <div class="tetris__score"><span>0</span> 점</div>
+                                            <div class="tetris__restartBtn">Try Again?</div>
+                                          </div>
+                                        <div class="tetris__info">
+                                            <div class="time"><span>0</span> 초</div>
+                                            <div class="score"><span>0</span> 점</div>
+                            
+                                        </div>
+                                      <div class="tetris__play">
+                                        <div class="playground">
+                                          <ul></ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                            <!-- 테트리스 -->
                             </div>
                         </div>
                     </div>
@@ -769,6 +811,7 @@
     <script src="assets/js/musicPlayer.js"></script>
     <script src="assets/js/color2.js"></script>
     <script src="assets/js/game.js"></script>
+    <script src="assets/js/tetris.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 

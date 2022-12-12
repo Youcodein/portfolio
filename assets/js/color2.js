@@ -185,11 +185,11 @@ function colorChage4(color4) {
     })
 
 }
-// function colorChage5(color5) {
-//     squareShadow1.style.boxShadow = inherit | inherit | inherit | inherit | color5;
+function colorChage5(color5) {
+    document.documentElement.style.setProperty("","")
 
 
-// }
+}
 
 
 
