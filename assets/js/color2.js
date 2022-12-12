@@ -28,6 +28,8 @@ const mainColorFont = document.querySelectorAll(".mainColorFont")
 // const RightnDisplayDecoration = document.querySelector(".rigthDisplay__decoration");
 // const RightDisplayGame = document.querySelector(".rigthDisplay__game");
 const centerDisplayMonitor = document.querySelector(".centerDisplay__middle__monitor");
+
+const centerDisplayGameMonitor = document.querySelector(".gameView");
 // const leftDisplayMonitor = document.querySelector(".leftDisplay__monitor");
 
 // subColor
@@ -125,6 +127,8 @@ function colorChage1(color1) {
         // RightnDisplayDecoration.style.backgroundColor = color1;
         // RightDisplayGame.style.backgroundColor = color1;
         centerDisplayMonitor.style.borderColor = color1;
+    centerDisplayGameMonitor.style.borderColor = color1;
+
         // centerDisplayTopBtnBg.forEach((ea) => {
         //     ea.style.backgroundColor = color1;
         // });
