@@ -480,13 +480,13 @@
         
                                         <div class="list__menu mainColor">
                                             <ul>
-                                                <li class="subColorFont">1. Main Class</li>
-                                                <li class="subColorFont">2. javascript : Quiz Effect</li>
-                                                <li class="subColorFont">3. javascript : Mouse Effect</li>
-                                                <li class="subColorFont">4. javascript : Game Effect</li>
-                                                <li class="subColorFont">5. javascript : Search Effect</li>
-                                                <li class="subColorFont">6. javascript : Parallax Effect</li>
-                                                <li class="subColorFont">7. javascript : Slider Effect</li>
+                                                <li class="subColorFont" onclick="slide1()">1. Main Class</li>
+                                                <li class="subColorFont" onclick="slide2()">2. javascript : Quiz Effect</li>
+                                                <li class="subColorFont" onclick="slide3()">3. javascript : Mouse Effect</li>
+                                                <li class="subColorFont" onclick="slide4()">4. javascript : Game Effect</li>
+                                                <li class="subColorFont" onclick="slide5()">5. javascript : Search Effect</li>
+                                                <li class="subColorFont" onclick="slide6()">6. javascript : Parallax Effect</li>
+                                                <li class="subColorFont" onclick="slide7()">7. javascript : Slider Effect</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1210,6 +1210,7 @@
     <script src="assets/js/memory.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
 
     <script>
         var swiper3 = new Swiper(".mySwiper.photoGallary", {
@@ -1251,6 +1252,28 @@
                 },
             },
         });
+
+        function slide1() {
+          swiper4.slideTo(0, 500, false)
+      }
+      function slide2() {
+          swiper4.slideTo(1, 500, false)
+      }
+      function slide3() {
+          swiper4.slideTo(2, 500, false)
+      }
+      function slide4() {
+          swiper4.slideTo(3, 500, false)
+      }
+      function slide5() {
+          swiper4.slideTo(4, 500, false)
+      }
+      function slide6() {
+          swiper4.slideTo(5, 500, false)
+      }
+      function slide7() {
+          swiper4.slideTo(6, 500, false)
+      }
     </script>
 
     <script>
