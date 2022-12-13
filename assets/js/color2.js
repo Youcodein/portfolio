@@ -28,6 +28,7 @@ const mainColorFont = document.querySelectorAll(".mainColorFont")
 // const RightnDisplayDecoration = document.querySelector(".rigthDisplay__decoration");
 // const RightDisplayGame = document.querySelector(".rigthDisplay__game");
 const centerDisplayMonitor = document.querySelector(".centerDisplay__middle__monitor");
+const leftDisplayMonitor = document.querySelector(".leftDisplay__monitor")
 
 const centerDisplayGameMonitor = document.querySelector(".gameView");
 const decorationBtnBorder = document.querySelectorAll(".decoBtn button");
@@ -164,7 +165,7 @@ function colorChage2(color2) {
     dot.forEach((ed) => {
         ed.style.backgroundColor = color2;
     });
-    
+    leftDisplayMonitor.style.borderColor = color2;
     line1.style.backgroundColor = color2;
 
     line2.style.backgroundColor = color2;
