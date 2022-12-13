@@ -426,8 +426,8 @@
     font-weight: 600;
     color: var(--main-color1);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
 }
 .mywork h3:hover {
 
@@ -753,8 +753,8 @@ column-gap: 20px;
     padding: 20px;
 }
 .contactMe__box {
-    width: 60% !important;
-    height: 60vh !important;
+    /* width: 60% !important;
+    height: 60vh !important; */
 }
 .contactMe__sendBtn {}
 

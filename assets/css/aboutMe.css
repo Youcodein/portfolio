@@ -245,7 +245,7 @@
 }
 @media (max-width : 800px) {
     
-    .aboutMe__box {
+    .modal__box {
         width: 96%;
     }
 }
