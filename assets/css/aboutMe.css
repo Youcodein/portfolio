@@ -6,7 +6,7 @@
 }
 
 
-.aboutMe__cont {
+.modal__cont {
     z-index: 100000;
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@
     justify-content: center;
     transform: scale(0);
 }
-.aboutMe__box {
+.modal__box {
     width: 70%;
     height: 80vh;
     background-color: rgba(0,0,0,0.8);
@@ -30,7 +30,7 @@
     transform: scale(0);
 }
 
-.aboutMe__close {
+.modal__close {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -43,21 +43,21 @@
     transform: scale(0);
 
 }
-.aboutMe__close:hover {
+.modal__close:hover {
     background-color: #3B7A6F
     
     ;
 }
-.aboutMe__close svg {
+.modal__close svg {
     color: #fff;
 }
 
-.aboutMe__inner {
+.modal__inner {
     padding: 70px;
     color: #fff;
     
 }
-.aboutMe__inner h3 {
+.modal__inner h3 {
     font-weight: 600;
     font-size: 40px;
     margin-bottom: 20px;
@@ -200,25 +200,25 @@
 }
 
 /* modal animation */
-.aboutMe__cont.show {     /*전체 배경*/
+.modal__cont.show {     /*전체 배경*/
     animation: foldOut 1s ease forwards;
 }
-.aboutMe__cont.show.hide {/*스크립트 박스*/
+.modal__cont.show.hide {/*스크립트 박스*/
     animation: foldIn 0.3s 0.5s ease backwards;
 }
 
-.aboutMe__cont.show .aboutMe__close { /*닫기 버튼*/
+.modal__cont.show .modal__close { /*닫기 버튼*/
     animation: zoomOut 0.3s 1.5s  ease forwards;
 }
 
-.aboutMe__cont.show.hide .aboutMe__close { /*닫기 버튼*/
+.modal__cont.show.hide .modal__close { /*닫기 버튼*/
     animation: zoomIn 0.3s  ease forwards;
 }
-.aboutMe__cont.show .aboutMe__box {
+.modal__cont.show .modal__box {
     animation: zoomOut 0.5s ease forwards;
     /* 뒤에 숫자는 delay 시간 */
 }
-.aboutMe__cont.show.hide .aboutMe__box {
+.modal__cont.show.hide .modal__box {
     animation: zoomIn 0.5s ease forwards;
 }
 
