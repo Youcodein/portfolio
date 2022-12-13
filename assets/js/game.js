@@ -33,6 +33,15 @@ flipCardGameBtn.addEventListener("click", () => {
 })
 
 const goBackBtn = document.querySelector(".goBack");
+const MyWorkBtn = document.querySelector(".MyWorkBtn");
+
+MyWorkBtn.addEventListener("click", () => {
+    myWork.classList.add("show");
+    game.classList.remove("show");
+    searchGame.classList.remove("show");
+    tetrisGame.classList.remove("show");
+    tetrisGame.classList.remove("show");
+})
 
 goBackBtn.addEventListener("click", () => {
     myWork.classList.add("show");
