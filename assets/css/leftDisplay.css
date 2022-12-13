@@ -285,7 +285,7 @@
     display: none;
     z-index: 100000;
     position: absolute;
-    right: 0;
+    left: 100px;
     bottom: 0;
     width: 100px;
   }
