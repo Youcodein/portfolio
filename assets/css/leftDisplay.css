@@ -363,16 +363,16 @@
   right: 0;
   bottom: 0;
   border-radius: inherit;
-  box-shadow:0 0.5em 0 0 #591A2A;
+  box-shadow:0 0.5em 0 0 var(--boxShadow0);
   transform: translate3d(0, 0.0em, -1em);
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 .aboutMeBtn:hover {
     background: #ca9b9b;
-    color: #591A2A;
+    color: var(--boxShadow0);
 }
 .aboutMeBtn:hover::before {
-    box-shadow:0 0.5em 0 0 #591A2A;
+    box-shadow:0 0.5em 0 0 var(--boxShadow0);
     transform: translate3d(0, 0.0em, -1em);
 }
 .aboutMeBtn:active {
@@ -779,16 +779,16 @@ transform: translate3d(0, 0, -1em);
   right: 0;
   bottom: 0;
   border-radius: inherit;
-  box-shadow:0 0.5em 0 0 #591A2A;
+  box-shadow:0 0.5em 0 0 var(--boxShadow0);
   transform: translate3d(0, 0.0em, -1em);
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 .resetBtn:hover {
     background: #ca9b9b;
-    color: #591A2A;
+    color: var(--boxShadow0);
 }
 .resetBtn:hover::before {
-    box-shadow:0 0.5em 0 0 #591A2A;
+    box-shadow:0 0.5em 0 0 var(--boxShadow0);
     transform: translate3d(0, 0.0em, -1em);
 }
 .resetBtn:active {
