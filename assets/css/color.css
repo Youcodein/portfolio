@@ -28,6 +28,7 @@
     --boxShadow4: #A4966E;
 
     --white: #fff;
+    --black: rgb(59, 59, 59);
 }
 
 .mainColor{
@@ -44,4 +45,8 @@
 }
 .mainColorFont{
     color: var(--main-color1);
+}
+.btnFontColor {
+    color: var(--white);
+
 }

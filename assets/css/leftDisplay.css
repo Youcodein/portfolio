@@ -321,13 +321,43 @@
   .deco__sticker__WED.show {
     display: block;
   }
-  .deco__sticker__WED img{
+  .deco__sticker__FED {
+    display: none;
+  }
+  .deco__sticker__FED.show {
+    display: block;
+  }
+  /* .deco__sticker__WED .WEDcreative{
+    z-index: 100000;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    rotate: 70deg;
+    width: 100px;
+  } */
+  .deco__sticker__WED .creativity{
+    z-index: 100000;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    rotate: -20deg;
+    width: 80px;
+  }
+  .deco__sticker__WED .mustache{
     z-index: 100000;
     position: absolute;
     left: 90px;
     bottom: 70px;
     rotate: -10deg;
-    width: 100px;
+    width: 90px;
+  }
+  .deco__sticker__FED .monitor {
+    z-index: 100000;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    rotate: -10deg;
+    width: 110px;
   }
   
 

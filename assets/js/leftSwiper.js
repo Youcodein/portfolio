@@ -13,7 +13,9 @@ const drawImg = document.querySelector(".sticker__draw");
 const bookImg = document.querySelector(".sticker__book");
 
 const WEDDECO = document.querySelector(".deco__sticker__WED");
+const FEDDECO = document.querySelector(".deco__sticker__FED");
 const WEDDECOBtn = document.querySelector(".swipeWEBD input");
+const FEDDECOBtn = document.querySelector(".swipeFED input");
 
 likeBirdBtn.addEventListener("click", () => {
     birdImg.classList.toggle("show");
@@ -33,6 +35,10 @@ likeBookBtn.addEventListener("click", () => {
 
 WEDDECOBtn.addEventListener("click", () => {
     WEDDECO.classList.toggle("show");
+})
+FEDDECOBtn.addEventListener("click", ()=> {
+    FEDDECO.classList.toggle("show");
+
 })
 
 likeResetBtn.addEventListener("click", () => {
