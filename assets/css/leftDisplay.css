@@ -256,6 +256,7 @@
     position: absolute;
     top: 0;
     width: 100px;
+    
   }
   .sticker__tea{
     display: none;
@@ -291,6 +292,7 @@
 
   .sticker__bread.show{
     display: block;
+    
   }
   .sticker__tea.show{
     display: block;
@@ -308,6 +310,28 @@
     display: block;
     
   }
+
+  .myMainProfile {
+    position: relative;
+  }
+
+  .deco__sticker__WED {
+    display: none;
+  }
+  .deco__sticker__WED.show {
+    display: block;
+  }
+  .deco__sticker__WED img{
+    z-index: 100000;
+    position: absolute;
+    left: 90px;
+    bottom: 70px;
+    rotate: -10deg;
+    width: 100px;
+  }
+  
+
+  /* aboutMe */
 
 .leftDisplay__topBtn {
     display: flex;

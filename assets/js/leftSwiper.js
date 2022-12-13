@@ -12,6 +12,9 @@ const teaImg = document.querySelector(".sticker__tea");
 const drawImg = document.querySelector(".sticker__draw");
 const bookImg = document.querySelector(".sticker__book");
 
+const WEDDECO = document.querySelector(".deco__sticker__WED");
+const WEDDECOBtn = document.querySelector(".swipeWEBD input");
+
 likeBirdBtn.addEventListener("click", () => {
     birdImg.classList.toggle("show");
 })
@@ -26,6 +29,10 @@ likeDrawBtn.addEventListener("click", () => {
 })
 likeBookBtn.addEventListener("click", () => {
     bookImg.classList.toggle("show");
+})
+
+WEDDECOBtn.addEventListener("click", () => {
+    WEDDECO.classList.toggle("show");
 })
 
 likeResetBtn.addEventListener("click", () => {
