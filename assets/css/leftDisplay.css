@@ -251,36 +251,62 @@
     position: relative;
   }
   .sticker__bread{
+    display: none;
     z-index: 100000;
     position: absolute;
     top: 0;
     width: 100px;
   }
   .sticker__tea{
+    display: none;
     z-index: 100000;
     position: absolute;
-    top: 100px;
+    left: 20px;
+    top: 170px;
     width: 100px;
   }
   .sticker__bird{
+    display: none;
     z-index: 100000;
     position: absolute;
     right: 0;
     width: 100px;
   }
   .sticker__draw{
+    display: none;
     z-index: 100000;
     position: absolute;
     right: 0;
     top: 0;
-    width: 100px;
+    width: 80px;
   }
   .sticker__book{
+    display: none;
     z-index: 100000;
     position: absolute;
     right: 0;
     bottom: 0;
     width: 100px;
+  }
+
+  .sticker__bread.show{
+    display: block;
+  }
+  .sticker__tea.show{
+    display: block;
+   
+  }
+  .sticker__bird.show{
+    display: block;
+  
+  }
+  .sticker__draw.show{
+    display: block;
+    
+  }
+  .sticker__book.show{
+    display: block;
+    
   }
 
 .leftDisplay__topBtn {
