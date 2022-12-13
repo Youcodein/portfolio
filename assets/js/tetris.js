@@ -361,6 +361,11 @@ document.addEventListener("keydown", (e) => {
         tetrisStartFunc();
     });
 
+
+    // 다른곳 들어가면 개임 리셋
+
+    
+
   // 창 끄기
 
     // TetrisIcon2.addEventListener("click", () => {

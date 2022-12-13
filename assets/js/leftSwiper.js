@@ -41,6 +41,16 @@ FEDDECOBtn.addEventListener("click", ()=> {
 
 })
 
+
+    // document.querySelector(".img .show").addEventListener("click", () => {
+    //     birdImg.classList.add("style1")
+    //     teaImg.classList.add("style1")
+    //     breadImg.classList.add("style1")
+    //     drawImg.classList.add("style1")
+    //     bookImg.classList.add("style1")
+    // })
+
+
 likeResetBtn.addEventListener("click", () => {
     birdImg.classList.remove("show");
     teaImg.classList.remove("show");

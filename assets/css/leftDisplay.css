@@ -257,6 +257,7 @@
     top: -10px;
     left: -10px;
     width: 100px;
+    animation: puffIn 0.5s;
     
   }
   .sticker__tea{
@@ -266,6 +267,7 @@
     left: 5px;
     top: 150px;
     width: 100px;
+    animation: puffIn 0.5s;
   }
   .sticker__bird{
     display: none;
@@ -273,6 +275,7 @@
     position: absolute;
     right: 0;
     width: 100px;
+    animation: puffIn 0.5s;
   }
   .sticker__draw{
     display: none;
@@ -282,6 +285,7 @@
     top: 5px;
     rotate: -40deg;
     width: 90px;
+    animation: puffIn 0.5s;
   }
   .sticker__book{
     display: none;
@@ -290,6 +294,7 @@
     left: 100px;
     bottom: -20px;
     width: 110px;
+    animation: puffIn 0.5s;
   }
 
   .sticker__bread.show{
@@ -312,6 +317,32 @@
     display: block;
     
   }
+
+  @keyframes popup {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes puffIn {
+    0% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(2, 2);
+      filter: blur(2px);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+    }
+  }
+
+  
 
   .myMainProfile {
     position: relative;
