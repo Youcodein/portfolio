@@ -262,8 +262,8 @@
     display: none;
     z-index: 100000;
     position: absolute;
-    left: 20px;
-    top: 170px;
+    left: 5px;
+    top: 150px;
     width: 100px;
   }
   .sticker__bird{
