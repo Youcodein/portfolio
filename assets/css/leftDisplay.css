@@ -278,9 +278,10 @@
     display: none;
     z-index: 100000;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 80px;
+    right: 5px;
+    top: 5px;
+    rotate: -40deg;
+    width: 90px;
   }
   .sticker__book{
     display: none;
