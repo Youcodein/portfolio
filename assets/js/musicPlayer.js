@@ -21,6 +21,11 @@ const allMusic = [
     }
 ]
 
+const music1Btn = document.querySelector(".decoBtn .deco1");
+const music2Btn = document.querySelector(".decoBtn .deco2");
+const music3Btn = document.querySelector(".decoBtn .deco3");
+const music4Btn = document.querySelector(".decoBtn .deco4");
+
 const musicWrap = document.querySelector(".rigthDisplay__musicplayer");
 const musicName = musicWrap.querySelector(".music__view__title .title");
 const musicArtist = musicWrap.querySelector(".music__view__title .artist");

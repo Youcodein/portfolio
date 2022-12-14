@@ -715,6 +715,7 @@ column-gap: 20px;
     font-size: 15px;
     line-height: 2;
     font-weight: 600;
+    /* animation: slideDown 1s; */
   }
 
 .centerDisplay__middle__title:hover > .list__menu {
@@ -733,6 +734,17 @@ column-gap: 20px;
     font-weight: 600;
     border-radius: 10px;
 }
+
+@keyframes slideDown {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+
+    }
+  }
 
 /* contactME */
 .contactMe__msg{

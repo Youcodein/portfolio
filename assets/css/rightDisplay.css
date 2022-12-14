@@ -186,8 +186,83 @@
     left: 130px;
     bottom: 10px;
 }
+/* music list */
+.music__list {
+    padding: 20px;
+    display: none;
+}
 
+.music__list.show {
+    display: block;
+}
 
+.music__list h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.music__list h3 .list {
+    display: inline-block;
+    vertical-align: -15px;
+    width: 48px;
+    height: 48px;
+    background: url(../img/musicBar.png) no-repeat;
+    background-position: -336px 0;
+    scale: 0.7;
+    margin-right: 5px;
+
+}
+
+.music__list h3 .close {
+    display: inline-block;
+    width: 48px;
+    vertical-align: -16px;
+    margin-left: 210px;
+    height: 48px;
+    background: url(../img/musicBar.png) no-repeat;
+    background-position: -384px 0;
+    scale: 0.7;
+}
+
+.music__list h3 .close:hover{
+    background-color: #eeeeee !important;
+    padding: 10px;
+    display: inline-block;
+}
+
+.music__list ul {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.music__list li {
+    border-bottom: 1px solid #000;
+    list-style: none;
+    position: relative;
+    padding: 5px 0;
+}
+
+.music__list li.playing {
+    color: #aaffa2;
+    background: #b298c7;
+}
+
+.music__list strong {
+    display: block;
+    font-size: 20px;
+}
+
+.music__list li span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.music__list li em {
+    font-style: normal;
+}
+
+/* decoration */
 
 .rigthDisplay__decoration{
     background: var(--main-color1);
