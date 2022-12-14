@@ -17,9 +17,9 @@ let matchedCard = 0;
 let matchScore = 100;
 
 let sound = [
-  "assets/audio/O.mp3",
-  "assets/audio/X.mp3",
-  "assets/audio/up.mp3",
+  "../assets/audio/O.mp3",
+  "../assets/audio/X.mp3",
+  "../assets/audio/up.mp3",
 ];
 
 let soundMatch = new Audio(sound[0]);
