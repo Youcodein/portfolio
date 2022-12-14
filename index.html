@@ -224,18 +224,18 @@
                                                 </div>
                                                 <div class="like">
                                                     <h2>My Like</h2>
-                                                    <div class="keyword__cont">
-                                                        <div class="keyword__01">
-                                                            <div class="keyword__01__passion"></div>
-                                                            <p>Passion</p>
+                                                    <div class="like__cont">
+                                                        <div class="like__01">
+                                                            <div class="like__01__bird"></div>
+                                                            <p>Bird</p>
                                                         </div>
-                                                        <div class="keyword__02">
-                                                            <div class="keyword__02__attentive"></div>
-                                                            <p>Attentive</p>
+                                                        <div class="like__02">
+                                                            <div class="like__02__book"></div>
+                                                            <p>Book</p>
                                                         </div>
-                                                        <div class="keyword__03">
-                                                            <div class="keyword__03__thoughtful"></div>
-                                                            <p>Thoughtful</p>
+                                                        <div class="like__03">
+                                                            <div class="like__03__draw"></div>
+                                                            <p>Draw</p>
                                                         </div>
                                                         
                                                     </div>
@@ -321,7 +321,7 @@
                                 <img src="assets/img/icons/book.svg" alt="book">
 
                             </button>
-                            <button class="resetBtn subColor">
+                            <button onclick="slideReset()" class="resetBtn subColor">
                                 Reset
                             </button>
                         </div>
@@ -1365,6 +1365,9 @@
       }
       function slide9() {
           swiper4.slideTo(8, 500, false)
+      }
+      function slideReset() {
+          swiper3.slideTo(0, 500, false)
       }
     </script>
 

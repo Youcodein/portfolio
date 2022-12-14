@@ -199,6 +199,44 @@
     background-size: cover;
 }
 
+.like__cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+.like__01{
+    padding: 10px;
+}
+.like__02{
+    padding: 10px;
+
+}
+.like__03{
+    padding: 10px;
+
+}
+.like__01__bird{
+    background: url(../img/keyword/bird.png);
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.like__02__book{
+    background: url(../img/keyword/book.png);
+    width: 68px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.like__03__draw{
+    background: url(../img/keyword/drawing.png);
+    width: 41px;
+    height: 51px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /* modal animation */
 .modal__cont.show {     /*전체 배경*/
     animation: foldOut 1s ease forwards;
