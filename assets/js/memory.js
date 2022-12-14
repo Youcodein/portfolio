@@ -17,9 +17,9 @@ let matchedCard = 0;
 let matchScore = 100;
 
 let sound = [
-  "../assets/audio/O.mp3",
-  "../assets/audio/X.mp3",
-  "../assets/audio/up.mp3",
+  "assets/audio/O.mp3",
+  "assets/audio/X.mp3",
+  "assets/audio/up.mp3",
 ];
 
 let soundMatch = new Audio(sound[0]);
@@ -133,7 +133,7 @@ function shuffleCard() {
     }, 4000);
 
     let imgTag = card.querySelector(".back img");
-    imgTag.src = `../assets/img/memory_card_game/${arr[index]}.svg`;
+    imgTag.src = `assets/img/memory_card_game/${arr[index]}.svg`;
   });
 }
 // shuffleCard();
