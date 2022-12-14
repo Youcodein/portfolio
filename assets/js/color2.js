@@ -1,5 +1,6 @@
 const decoBtn = document.querySelectorAll(".decoBtn button");
 
+const musicPlayStopBtn = document.querySelectorAll("#control-play");
 // mainColor
 
 // leftDisplay.style.backgroundColor = color1;

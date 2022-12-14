@@ -32,8 +32,6 @@ const musicArtist = musicWrap.querySelector(".music__view__title .artist");
 const musicAudio = musicWrap.querySelector("#main-audio");
 
 const musicPlay = musicWrap.querySelector("#control-play");
-const musicPlayBtn = musicWrap.querySelector("#control-play.play");
-const musicStopBtn = musicWrap.querySelector("#control-play.stop");
 
 const musicProgress = musicWrap.querySelector(".progress");
 const musicProgressBar = musicWrap.querySelector(".progress .bar");
@@ -54,8 +52,7 @@ function loadMusic(num){
 // 재생버튼
 function playMusic(){
     musicWrap.classList.add("paused");
-    musicPlayBtn.classList.remove("show")
-    musicStopBtn.classList.add("show")
+    musicPlay.classList.remove("show")
     musicPlay.setAttribute("title","정지");
     musicPlay.setAttribute("class","stop");
     musicAudio.play();
@@ -64,8 +61,8 @@ function playMusic(){
 // 정지버튼
 function pauseMusic(){
     musicWrap.classList.remove("paused");
-    musicPlayBtn.classList.add("show")
-    musicStopBtn.classList.remove("show")
+    musicPlay.classList.add("show")
+
     musicPlay.setAttribute("title","재생");
     musicPlay.setAttribute("class","play");
     musicAudio.pause();
