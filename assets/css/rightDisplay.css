@@ -167,20 +167,26 @@
     padding: 0 80px;
 }
 .control .play{
+    display: none;
+}
+.control .stop{
+    display: none;
+}
+.control .play.show{
     display: block;
-    width: 11px;
-    height: 20px;
-    background: url(../img/icons/musicPlay.svg) no-repeat;
+    width: 15px;
+    height: 21px;
+    /* background-image: url("data:image/svg+xml,%3Csvg width='15' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.27588 7L0.775879 13.0622L0.77588 0.937822L8.27588 7Z' fill='%23B8405E'/%3E%3C/svg%3E%0A"); */
     background-size: cover;
     position: absolute;
     left: 130px;
     bottom: 10px;
 }
-.control .stop{
+.control .stop.show{
     display: block;
     width: 11px;
     height: 20px;
-    background: url(../img/icons/musicStop.svg) no-repeat;
+    /* background: url(../img/icons/musicStop.svg) no-repeat; */
     background-size: cover;
     position: absolute;
     left: 130px;
