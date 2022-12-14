@@ -8,6 +8,8 @@ const searchGameBtn = document.querySelector(".searchGameBtn");
 const flipCardGameBtn = document.querySelector(".flipCardGameBtn");
 const TetrisGameBtn = document.querySelector(".TetrisGameBtn");
 
+var modalCont2 = document.querySelectorAll(".modal__cont");
+
 searchGameBtn.addEventListener("click", () => {
     myWork.classList.remove("show");
     game.classList.add("show");
@@ -40,7 +42,10 @@ MyWorkBtn.addEventListener("click", () => {
     game.classList.remove("show");
     searchGame.classList.remove("show");
     tetrisGame.classList.remove("show");
-    tetrisGame.classList.remove("show");
+    modalCont2.forEach((e) => {
+        e.classList.remove("show");
+        e.classList.remove("hide");
+    });
 })
 
 goBackBtn.addEventListener("click", () => {
@@ -48,5 +53,10 @@ goBackBtn.addEventListener("click", () => {
     game.classList.remove("show");
     searchGame.classList.remove("show");
     tetrisGame.classList.remove("show");
-    tetrisGame.classList.remove("show");
+    modalCont2.forEach((e) => {
+        e.classList.remove("show");
+        e.classList.remove("hide");
+    });
+    
+    
 })

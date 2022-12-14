@@ -26,6 +26,7 @@ function Modal(num) {
     // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
     modalClose[num].onclick = function() {
         modalCont[num].classList.add("hide");
+        // modalCont[num].classList.remove("show");
     };
   };
 } 
