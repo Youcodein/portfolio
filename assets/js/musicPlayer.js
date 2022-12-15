@@ -103,11 +103,13 @@ musicProgress.addEventListener("click", (e) => {
     musicAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration        //백분위로 나눈 숫자에 다시 전체 길이를 곱해서 현재 재생값으로 바꿈
 })
 
+
 //플레이 버튼 클릭
 musicPlay.addEventListener("click", ()=>{
     const isMusicPaused = musicWrap.classList.contains("paused");   //음악이 재생되고 있다는 뜻
     isMusicPaused ? pauseMusic() : playMusic();
 
 })
+
 
 

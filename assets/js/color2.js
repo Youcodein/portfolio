@@ -1,6 +1,7 @@
 const decoBtn = document.querySelectorAll(".decoBtn button");
 
 const musicPlayStopBtn = document.querySelector(".control #control-play svg path");
+const musicPlayStop2Btn = document.querySelectorAll(".control #control-play svg rect");
 // mainColor
 
 
@@ -155,7 +156,9 @@ function colorChage2(color2) {
 
     line3.style.backgroundColor = color2;
     musicPlayStopBtn.setAttribute("fill", tagColor);
-    
+    musicPlayStop2Btn.forEach((emp) => {
+        emp.setAttribute("fill", tagColor);
+    });
 
 }
 
