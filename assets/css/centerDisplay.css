@@ -8,10 +8,14 @@
 .centerDisplay {
     /* display: none; */
     /* height: 790px; */
-    display: grid;
+    /* display: grid;
     grid-template-rows: 1fr 2.5fr 1fr;
     grid-template-columns: 100%;
-    row-gap: 10px;
+    row-gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    /* 임시width */
 }
 
 .centerGame {
@@ -220,7 +224,10 @@
     background: var(--sub-color1);
     border-radius: 10px;
     padding: 15px;
-
+    margin-top: 1.11em;
+    margin-bottom: 1.11em;
+    /* -webkit-box-flex: 1; */
+    /* flex: 1; */
 }
 
 .centerDisplay__middle__header {
