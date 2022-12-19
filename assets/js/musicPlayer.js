@@ -32,6 +32,7 @@ const musicArtist = musicWrap.querySelector(".music__view__title .artist");
 const musicAudio = musicWrap.querySelector("#main-audio");
 
 const musicPlay = musicWrap.querySelector("#control-play");
+const musicPlayBtn = musicWrap.querySelector("#control-play svg");
 
 const musicProgress = musicWrap.querySelector(".progress");
 const musicProgressBar = musicWrap.querySelector(".progress .bar");
@@ -55,6 +56,7 @@ function playMusic(){
     musicPlay.classList.remove("show")
     musicPlay.setAttribute("title","정지");
     musicPlay.setAttribute("class","stop");
+    musicPlayBtn.setAttribute("viewBox", "50 0 50 50");
     musicAudio.play();
 }
 
@@ -62,6 +64,7 @@ function playMusic(){
 function pauseMusic(){
     musicWrap.classList.remove("paused");
     musicPlay.classList.add("show")
+    musicPlayBtn.setAttribute("viewBox", "0 0 50 50");
 
     musicPlay.setAttribute("title","재생");
     musicPlay.setAttribute("class","play");
