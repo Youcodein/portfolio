@@ -14,7 +14,7 @@
     row-gap: 10px; */
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 30vw;
     /* 임시width */
 }
 
@@ -53,7 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 1fr; */
     padding: 15px;
