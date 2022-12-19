@@ -60,6 +60,71 @@ body {
     grid-column-gap: 1.11em;
 }
 
+/* intromodal */
+.intro_modal {
+    left: 200%;
+    text-align: center;
+    width: 600px;
+    height: 250px;
+    position: absolute !important;
+    z-index: 3;
+    transition: all 0.5s;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+    text-align: center;
+  }
+  .intro_modal hr {
+    border: none;
+    width: 95%;
+    border-top: 3px solid #efedea;
+    margin-bottom: -1px;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.02);
+    z-index: 2;
+    position: relative;
+  }
+  .intro_modal h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 15px 24px 23px 24px;
+  }
+  .intro_modal .text {
+    margin: 20px 0;
+  }
+  .intro_modal .go {
+    color: #476323;
+    position: absolute;
+    bottom: -26px;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    cursor: pointer;
+    right: 0;
+  }
+  .intro_modal__header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 282px;
+    top: -87px;
+  }
+  .intro_modal__header p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 71px;
+    color: #c4ebfd;
+    left: 4px;
+  }
+  .intro_modal__header img {
+    width: 282px;
+  }
+
 
 
 
