@@ -14,13 +14,15 @@
     row-gap: 10px; */
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    /* width: 30vw; */
     /* 임시width */
 }
 
 .centerGame {
     display: none;
-    width: 100%;
+    /* width: 100%; */
+    width: 30vw;
+
     height: 100%;
     /* background: var(--sub-color1); */
     border-radius: 10px;

@@ -56,7 +56,7 @@ body {
 .fullDisplay {
     /* width: 1280px; */
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 30% 45% 25%;
     grid-column-gap: 1.11em;
 }
 
