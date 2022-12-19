@@ -116,18 +116,22 @@
 }
 .memory__card {
   padding: 30px;
-  /* margin-top: 90px; */
+  margin-top: 60px;
 }
 .memory__card .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 60px 0;
 }
 .memory__card .cards li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   letter-spacing: normal;
-  width: 100px;
-  height: 100px;
+  width: 95px;
+    height: 95px;
   transform-style: preserve-3d;
   perspective: 500px;
   position: relative;
