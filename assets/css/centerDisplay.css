@@ -14,7 +14,7 @@
     row-gap: 10px; */
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 35vw;
     /* 임시width */
 }
 

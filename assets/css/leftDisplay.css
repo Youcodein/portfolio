@@ -4,6 +4,7 @@
     background: var(--main-color1);
     border-radius: 15px 15px 60px 60px;
     box-sizing: border-box;
+    width: 23.63em;
 }
 .leftDisplay__header {
     padding: 15px 20px;
