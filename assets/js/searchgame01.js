@@ -529,19 +529,17 @@ const searchTime = document.querySelector(".search__time span");
 
     };
 
-    //다시 시작하기
+    // 다시 시작하기
     function restart(){
-        setTimeout(()=>{
-            searchResultWrap.classList.remove("show");
-            timeReamining = 120;
-            Score = 0;
-            searchScoreNow.innerText = "0";
-
-            searchAnswers.innerHTML = "";
+        searchResultWrap.classList.remove("show");
+        // searchAudioBtn.classList.remove("playing");
+        searchAudio.play();
+        startQuiz();
+        timeReamining = 120;
+        Score = 0;
+        searchScoreNow.innerText = "0";
+        searchAnswers.innerHTML = "";
             searchMissAnswers.innerHTML = "";
-
-            startQuiz();
-        }, 1000);
     }
     
     //버튼 이벤트
@@ -557,26 +555,28 @@ const searchTime = document.querySelector(".search__time span");
         searchAudioStop.style.display = "none";
         searchAudio.play();
     });
+    searchRestart.addEventListener("click", restart);
+
     // searchRestart.addEventListener("click", restart);   ''
 
-    // 서치게임
-    const searchClose1 = document.querySelectorAll(".search__header div");
-    searchClose1.forEach( (e) => {
-        e.addEventListener("click", () => {
-            searchResultWrap.classList.remove("show");
-            searchStart.style.display = "block";
-            timeReamining = 120;
-            Score = 0;
-            searchCount.innerText = "0";
+    // // 서치게임
+    // const searchClose1 = document.querySelectorAll(".search__header div");
+    // searchClose1.forEach( (e) => {
+    //     e.addEventListener("click", () => {
+    //         searchResultWrap.classList.remove("show");
+    //         searchStart.style.display = "block";
+    //         timeReamining = 120;
+    //         Score = 0;
+    //         searchCount.innerText = "0";
     
-            searchAnswers.innerHTML = "";
-            searchMissAnswers.innerHTML = "";
+    //         searchAnswers.innerHTML = "";
+    //         searchMissAnswers.innerHTML = "";
     
             
-            searchAudio.pause();
-            searchAudioPlay.style.display = "none";
-            searchAudioStop.style.display = "block";
-            searchTime.innerText = displayTime();
-            clearInterval(timeInterval);
-        });
-    })
+    //         searchAudio.pause();
+    //         searchAudioPlay.style.display = "none";
+    //         searchAudioStop.style.display = "block";
+    //         searchTime.innerText = displayTime();
+    //         clearInterval(timeInterval);
+    //     });
+    // })

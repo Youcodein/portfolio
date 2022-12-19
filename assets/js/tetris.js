@@ -356,11 +356,9 @@ document.addEventListener("keydown", (e) => {
     // 게임 재시작하기
     tetrisRestartBtn.addEventListener("click", () => {
         resetTetris();
-        // tetrisRestart.classList.remove("show");
-        // tetrisStart.classList.add("show");
-        stopTetris = true;
-        generateNewBlock()
-        // tetrisStartFunc();
+        tetrisRestart.classList.remove("show");
+        tetrisStart.classList.add("show");
+        tetrisStartFunc();
     });
 
 
@@ -370,11 +368,11 @@ document.addEventListener("keydown", (e) => {
 
   // 창 끄기
 
-//   TetrisGameBtn2.addEventListener("click", () => {
-//     resetTetris();
-//     tetrisRestart.classList.remove("show");
-//     tetrisStart.classList.add("show");
-//   });
+  TetrisGameBtn2.addEventListener("click", () => {
+    resetTetris();
+    // tetrisRestart.classList.remove("show");
+    tetrisStart.classList.add("show");
+  });
 //   TetrisCloseBtn.addEventListener("click", () => {
 //     resetTetris();
 //     tetrisRestart.classList.remove("show");
