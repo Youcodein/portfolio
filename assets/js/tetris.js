@@ -16,7 +16,7 @@ const resultLine = tetrisWrap2.querySelector(".tetris__total .tetrisline span");
 
 
 
-// const TetrisIcon2 = document.querySelector(".icon4");
+const TetrisGameBtn2 = document.querySelector(".TetrisGameBtn");
 // const TetrisCloseBtn = document.querySelector(".tetris__close");
 
 // let tetrisMusic = new Audio("../assets/audio/tetrisBGM.mp3");
@@ -25,7 +25,7 @@ const resultLine = tetrisWrap2.querySelector(".tetris__total .tetrisline span");
 
 // variables
 let rows = 18;
-let cols = 13;
+let cols = 14;
 let tetrisScore = 0;
 let duration = 500;
 let downInterval;
@@ -356,9 +356,11 @@ document.addEventListener("keydown", (e) => {
     // 게임 재시작하기
     tetrisRestartBtn.addEventListener("click", () => {
         resetTetris();
-        tetrisRestart.classList.remove("show");
-        tetrisStart.classList.add("show");
-        tetrisStartFunc();
+        // tetrisRestart.classList.remove("show");
+        // tetrisStart.classList.add("show");
+        stopTetris = true;
+        generateNewBlock()
+        // tetrisStartFunc();
     });
 
 
@@ -368,7 +370,7 @@ document.addEventListener("keydown", (e) => {
 
   // 창 끄기
 
-    // TetrisIcon2.addEventListener("click", () => {
+//   TetrisGameBtn2.addEventListener("click", () => {
 //     resetTetris();
 //     tetrisRestart.classList.remove("show");
 //     tetrisStart.classList.add("show");
