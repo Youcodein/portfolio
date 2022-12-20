@@ -16,6 +16,7 @@ searchGameBtn.addEventListener("click", () => {
     tetrisGame.classList.remove("show");
     memoryGame.classList.remove("show");
     searchGame.classList.add("show");
+    tetrisGameover()
 })
 
 TetrisGameBtn.addEventListener("click", () => {
@@ -32,6 +33,7 @@ flipCardGameBtn.addEventListener("click", () => {
     searchGame.classList.remove("show");
     tetrisGame.classList.remove("show");
     memoryGame.classList.add("show");
+    tetrisGameover()
 })
 
 const goBackBtn = document.querySelector(".goBack");
@@ -42,6 +44,7 @@ MyWorkBtn.addEventListener("click", () => {
     game.classList.remove("show");
     searchGame.classList.remove("show");
     tetrisGame.classList.remove("show");
+    tetrisGameover()
     modalCont2.forEach((e) => {
         e.classList.remove("show");
         e.classList.remove("hide");
