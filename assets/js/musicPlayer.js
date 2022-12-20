@@ -56,7 +56,7 @@ function playMusic(){
     musicPlay.classList.remove("show")
     musicPlay.setAttribute("title","정지");
     musicPlay.setAttribute("class","stop");
-    musicPlayBtn.setAttribute("viewBox", "50 0 50 50");
+    musicPlayBtn.setAttribute("viewBox", "60 0 50 50");
     musicAudio.play();
 }
 

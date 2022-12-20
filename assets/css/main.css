@@ -56,8 +56,8 @@ body {
 .fullDisplay {
     /* width: 1280px; */
     display: grid;
-    grid-template-columns: 30% 45% 25%;
-    grid-column-gap: 1.11em;
+    grid-template-columns: 30% 45% 23%;
+    grid-column-gap: 1%;
 }
 
 /* intromodal */
