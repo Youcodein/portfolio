@@ -214,24 +214,26 @@
     display: flex;
     border: 11px solid var(--sub-color1);
     align-items: center;
-    width: 300px !important;
-    height: 300px !important;
+    /* width: 300px !important; */
+    /* height: 300px !important; */
+    box-sizing: border-box !important;
     /* background: #b8405e; */
     border-radius: 15px;
     z-index: 10000;
 }
 .img {
     /* background: url(../img/mainPhoto.jpg); */
-    width: 90%;
+    width: 100%;
     height: 100%;
     border-radius: 15px;
     /* margin: auto; */
     background-size: cover;
+    
     /* background: #b8405e; */
 }
 .img > img {
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    /* height: 300px; */
     /* border-radius: 15px; */
 }
   /* imgSelect */
