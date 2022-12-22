@@ -261,9 +261,9 @@
     display: none;
     z-index: 100000;
     position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 100px;
+    top: 2px;
+    left: 1px;
+    width: 9vh;
     animation: puffIn 0.5s;
     
   }
@@ -273,7 +273,7 @@
     position: absolute;
     left: 5px;
     top: 150px;
-    width: 100px;
+    width: 9vh;
     animation: puffIn 0.5s;
   }
   .sticker__bird{
@@ -281,7 +281,7 @@
     z-index: 100000;
     position: absolute;
     right: 0;
-    width: 100px;
+    width: 9vh;
     animation: puffIn 0.5s;
   }
   .sticker__draw{
@@ -291,7 +291,7 @@
     right: 5px;
     top: 5px;
     rotate: -40deg;
-    width: 90px;
+    width: 8vh;
     animation: puffIn 0.5s;
   }
   .sticker__book{
@@ -300,7 +300,7 @@
     position: absolute;
     left: 100px;
     bottom: -20px;
-    width: 110px;
+    width: 10vh;
     animation: puffIn 0.5s;
   }
 
