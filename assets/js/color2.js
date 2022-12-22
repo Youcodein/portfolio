@@ -1,4 +1,5 @@
 const decoBtn = document.querySelectorAll(".decoBtn button");
+const leftMonitor = document.querySelector(".photoGallary")
 
 const musicPlayStopBtn = document.querySelector(".control #control-play svg path");
 const musicPlayStop2Btn = document.querySelectorAll(".control #control-play svg rect");
@@ -123,7 +124,6 @@ function colorChage1(color1) {
         
         centerDisplayMonitor.style.borderColor = color1;
     centerDisplayGameMonitor.style.borderColor = color1;
-
         
         mainColor.forEach((em) => {
             em.style.backgroundColor = color1;
@@ -143,6 +143,8 @@ function colorChage2(color2) {
     decorationBtnBorder.forEach((ebb) => {
         ebb.style.borderColor = color2;
     });
+    leftMonitor.style.backgroundColor = color2;
+
     subColorFont.forEach((esf) => {
         esf.style.color = color2;
     });

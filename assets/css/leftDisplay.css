@@ -206,13 +206,13 @@
 
 /*  */
 .leftDisplay__gallary {
-    padding: 20px 34px !important;
+    padding: 2vmin 3vmin !important;
     box-sizing: border-box !important;
 }
 .leftDisplay__monitor {
     margin: 0px auto;
     display: flex;
-    border: 11px solid var(--sub-color1);
+    /* border: 11px solid var(--sub-color1); */
     align-items: center;
     /* width: 300px !important; */
     /* height: 300px !important; */
@@ -220,6 +220,7 @@
     /* background: #b8405e; */
     border-radius: 15px;
     z-index: 10000;
+    overflow: hidden;
 }
 .img {
     /* background: url(../img/mainPhoto.jpg); */
@@ -252,6 +253,9 @@
   } */
   .photoGallary {
     position: relative;
+    background: var(--main-color4);
+    padding: 0.7vw !important;
+    border-radius: 10px;
   }
   .sticker__bread{
     display: none;
