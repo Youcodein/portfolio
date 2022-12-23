@@ -22,7 +22,7 @@
 }
 .modal__box {
     width: 70%;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: rgba(0,0,0,0.8);
     /* 기본이 16px 0.5 = 8px */
     border-radius: 0.5rem;
