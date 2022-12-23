@@ -474,7 +474,7 @@ column-gap: 20px;
 .snss {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px;
+    padding: 0 1vw;
     justify-content: space-between;
 }
 .snsBtn {
